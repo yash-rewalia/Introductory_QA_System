@@ -1,0 +1,5 @@
+[2025-02-17 11:31:21,637] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:31:25,179] {D:\work_yk\QA_system\scripts\data_ingestion.py:22} INFO - Data loaded successfully
+[2025-02-17 11:31:27,138] {D:\work_yk\QA_system\scripts\embedding.py:24} INFO - 
+[2025-02-17 11:31:27,139] {D:\work_yk\QA_system\scripts\embedding.py:27} INFO - 
+[2025-02-17 11:31:48,324] {D:\work_yk\QA_system\scripts\embedding.py:30} INFO - 

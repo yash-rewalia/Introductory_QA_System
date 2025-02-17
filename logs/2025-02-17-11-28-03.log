@@ -1,0 +1,2 @@
+[2025-02-17 11:28:38,978] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:28:38,978] {D:\work_yk\QA_system\scripts\data_ingestion.py:25} ERROR - Error loading data from the given directory

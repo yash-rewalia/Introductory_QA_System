@@ -1,0 +1,2424 @@
+CampusX
+Types of Statistics
+Descriptive statistics
+Inferential statistics
+Population vs Sample
+Parameter Vs Statistics
+Inferential Statistics
+Types of Data
+Measures of Central Tendency
+Mean
+Median
+Mode
+Weighted Mean
+Trimmed Mean
+Measures of Dispersion
+Range
+Variance
+Standard Deviation
+Coefficient of Variation
+Graphs for Univariate Analysis
+Categorical
+Frequency Distribution Table And Cumulative Frequency
+Numerical
+Frequency Distribution Table and Histogram
+Shapes of Histogram
+Graphs for Bivariate analysis
+Categorical - Categorical
+Contingency Table/Crosstab
+Numerical - Numerical
+Scatter Plot
+Percentiles and Quantiles
+Quantiles
+Percentile
+5 Number Summary
+Interquartile Range
+Covariance
+Calculation of Covariance
+What problem does Covariance solve?
+Disadvantages of Covariance
+
+Covariance of a variable with itself
+Correlation
+Correlation and Causation
+Other correlation coefficients
+Visualizing Multiple Variables
+Random Variables
+Probability Distributions
+Problem with Distribution?
+Types of Probability Distribution Functions (PDF)
+Famous Distributions
+Why are Probability Distributions important?
+A note on Parameters
+Probability Distribution Function
+Probability Mass Function
+Cumulative Distribution Function (CDF) for a PMF
+Probability Density Function
+Why is it probability density and not probability?
+What does the area under the graph represent?
+How to calculate Probability of a single value of r.v. ?
+Density Estimation
+Parametric Density Estimation
+Non - Parametric Density Estimation
+Kernel Density Estimation
+How to use PDF in Data Science?
+How to use CDF in Data Science?
+How to use 2D Density Plots ?
+Normal Distribution
+What is normal distribution?
+Why is it so important?
+Commonality in Nature
+PDF equation for Normal Distribution
+Standard Normal Variate
+PDF equation for Standard Normal Variate
+Why Standardize data?
+How to Standardize data?
+Z-tables
+Properties of Normal Distribution
+Symmetricity
+Measures of Central Tendencies are equal
+Empirical Rule
+Area under the curve
+CDF of Normal Distribution
+Skewness
+How is Skewness calculated?
+
+Statistical Moments
+Kurtosis
+Practical use-case
+Excess Kurtosis
+Types of Kurtosis
+Leptokurtic
+Platykurtic
+Mesokurtic
+QQ Plot
+How to find if a given distribution is normal or not?
+Visual Inspection:
+QQ Plot:
+Statistical Tests:
+What is a QQ Plot and how is it plotted?
+Uniform distribution
+What is Uniform Distribution and its types?
+Application in Machine Learning and Data Science
+Log Normal Distribution
+Pareto Distribution
+Pareto Distribution
+What is Power Law?
+Graph & Parameters
+Examples
+Bernoulli Distribution
+Binomial Distribution
+Criteria:
+Binary classification problems:
+Hypothesis testing:
+Logistic regression:
+A/B testing:
+Sampling Distribution
+Why Sampling Distribution is important?
+The Central Limit Theorem
+Case Study - What is the average income of Indians
+Population Vs Sample
+Population
+Sample
+Parameter Vs Estimate/Statistic
+Parameter
+Statistic
+Inferential Statistics
+Point Estimate
+Confidence Interval
+Confidence Interval (Sigma Known)
+
+Assumptions
+Interpreting Confidence Intervals
+Confidence level
+Interval range
+Interpretation
+What is the trade-off ?
+Factors Affecting Margin of Error
+Confidence Level (1-alpha)
+Sample Size
+Population Standard Deviation
+Confidence Interval (Sigma Not Known)
+Assumptions
+Student's t Distribution
+Hypothesis Testing
+Null and Alternate Hypothesis
+Steps involved in Hypothesis Testing
+Rejection Region Approach
+Performing a z-test
+Rejection Region
+Problem with Rejection Region Approach
+Type 1 and Type 2 Error
+Type-I (False Positive)
+Type-II (False Negative)
+One sided vs. Two sided Test
+One-sided (one-tailed) test
+Two-sided (two-tailed) test
+Where can be Hypothesis applied ?
+Hypothesis Testing ML Applications
+p-value
+Interpreting p-value
+With significance value
+Without significance value
+p-value in context of z-test
+t-test
+Single Sample t-test
+Assumptions for a single sample t-test
+Independent 2 Sample t-test
+Assumptions for the test
+Independent 2 Sample t-test
+Common scenarios where a paired two-sample t-test is used include:
+Assumptions
+Chi-Square Distribution
+Properties
+Chi-Square Test
+
+Goodness of Fit Test
+Steps
+Assumptions
+Test for Independence
+Steps
+Assumptions
+Applications in Machine Learning
+F-Distribution
+One way ANOVA test
+Steps
+Assumptions
+Post-hoc Test
+Why is t-test not used for more than 3 categories?
+Application in Machine Learning
+Regression Analysis
+What's the statistics connection?
+Why is Regression Analysis required?
+
+Types of Statistics
+Descriptive statistics
+Descriptive statistics deals with the collection, organization, analysis, interpretation, and
+presentation of data. It focuses on summarizing and describing the main features of a set of
+data, without making inferences or predictions about the larger population.
+
+Inferential statistics
+Inferential statistics deals with making conclusions and predictions about a population based
+on a sample. It involves the use of probability theory to estimate the likelihood of certain events
+occurring, hypothesis testing to determine if a certain claim about a population is supported by
+the data, and regression analysis to examine the relationships between variables.
+
+Population vs Sample
+Population refers to the entire group of individuals or objects that we are interested in studying. It
+is the complete set of observations that we want to make inferences about. For example, the
+population might be all the students in a particular school or all the cars in a particular city.
+A sample, on the other hand, is a subset of the population. It is a smaller group of individuals or
+objects that we select from the population to study. Samples are used to estimate characteristics of
+the population, such as the mean or the proportion with a certain attribute. For example, we might
+randomly select 100 students.
+Examples:
+● All cricket fans vs fans who were present in the stadium
+● All students vs who visit college for lectures
+Things to be careful about which creating samples:
+● Sample Size
+● Random
+● Representative
+
+Parameter Vs Statistics
+Parameter is a characteristic of a population, while a statistic is a characteristic of a sample.
+Parameters are generally unknown and are estimated using statistics. The goal of statistical
+
+inference is to use the information obtained from the sample to make inferences about the
+population parameters.
+
+Inferential Statistics
+Inferential statistics is a branch of statistics that deals with making inferences or predictions about
+a larger population based on a sample of data. It involves using statistical techniques to test
+hypotheses and draw conclusions from data. Some of the topics that come under inferential
+statistics are:
+1.
+
+Hypothesis testing: This involves testing a hypothesis about a population parameter based on
+a sample of data. For example, testing whether the mean height of a population is different
+from a given value.
+
+2. Confidence intervals: This involves estimating the range of values that a population
+parameter could take based on a sample of data. For example, estimating the population
+mean height within a given confidence level.
+3. Analysis of variance (ANOVA): This involves comparing means across multiple groups to
+determine if there are any significant differences. For example, comparing the mean height
+of individuals from different regions.
+4. Regression analysis: This involves modeling the relationship between a dependent variable
+and one or more independent variables. For example, predicting the sales of a product based
+on advertising expenditure.
+5. Chi-square tests: This involves testing the independence or association between two
+categorical variables. For example, testing whether gender and occupation are independent
+variables.
+6. Sampling techniques: This involves ensuring that the sample of data is representative of the
+population. For example, using random sampling to select individuals from a population.
+7. Bayesian statistics: This is an alternative approach to statistical inference that involves
+updating beliefs about the probability of an event based on new evidence. For example,
+updating the probability of a disease given a positive test result.
+
+Types of Data
+
+Measures of Central Tendency
+A measure of central tendency is a statistical measure that represents a typical or central value for a
+dataset. It provides a summary of the data by identifying a single value that is most representative
+of the dataset as a whole.
+
+Mean
+
+The disadvantage of mean is that it is prone to getting skewed due to outliers. But, we have
+been talking about algebraic mean. Geometric mean on the other hand responds relatively well
+to outliers. It doesn’t get skewed as easily. Proneness to getting skewed needs to be
+investigated for oher types of mean like Harmonic mean.
+
+Median
+Median sorts the data and the fact that outliers are relatively lower in number compared to
+other regular data points, it (median) doesn’t get affected as much by outliers. In fact, by the
+nature of outliers being extreme (i.e. they lie at ends/poles of sorted data) themselves implies
+that it won’t affect median values. But, this same nature affects other extreme percentile values
+(like 1st, 5th, 95th, 99th, etc. percentiles) very badly.
+
+Mode
+The mode is the value that appears most frequently in the dataset.
+
+Weighted Mean
+The weighted mean is the sum of the products of each value and its weight, divided by the sum
+of the weights. It is used to calculate a mean when the values in the dataset have different
+importance or frequency.
+
+Example: A good example is calculating SGPA for all subjects in a semester. Since different
+subjects may have different weightage points i.e. credits, you have to consider those weights
+while calculating the mean.
+
+Trimmed Mean
+A trimmed mean is calculated by removing a certain percentage of the smallest and largest
+values from the dataset and then taking the mean of the remaining values. The percentage of
+values removed is called the trimming percentage.
+
+Measures of Dispersion
+A measure of dispersion is a statistical measure that describes the spread or variability of a dataset.
+It provides information about how the data is distributed around the central tendency (mean,
+median or mode) of the dataset. Consider the example where there are 3 data points ( -10, 0, 10 )
+which has mean of 0. Another example of 5 data points ( -20, -5, 0, 5, 20 ) which have same mean of
+0. here, even though the two samples have very different spread in the data, they have the same
+mean. So, measure of central tendency alone can’t describe a sample. You also need measures of
+dispersion.
+
+Range
+The range is the difference between the maximum and minimum values in the dataset. It is a
+simple measure of dispersion that is easy to calculate but can be affected by outliers.
+
+Variance
+●
+
+The variance is the average of the squared differences between each data point and the
+mean. It measures the average distance of each data point from the mean and is useful in
+comparing the dispersion of datasets with different means.
+
+●
+
+The purpose of squaring the distance is to make it positive so that opposite distances don’t
+cancel out each other (i.e. we are concerned with magnitude of distance and not the
+position of the data point from the mean). The downfall of using square of distance is this is
+prone to getting skewed by outliers. Squaring it amplifies the skewness of outliers.
+
+●
+
+We could also have used modulus for this purpose, but squaring it is makes it continuous
+which makes this usable in many other applications. The measure of dispersion that uses
+modulus instead of squares is called Mean Absolute Deviation or MAD for short. MAD is
+relatively less prone to getting skewed by outliers due to its power being 1.
+
+●
+
+Another sort of disadvantage of variance is that it gives the average spread in squared terms.
+For example, if we were to calculate the variance for a random distribution of salary in LPA,
+then variance would be in terms of LPA2. So, to solve this problem, we use Standard
+
+Deviation.
+● QUESTION: Why do we divide sample variance by (n-1) ?
+
+Standard Deviation
+The standard deviation is the square root of the variance. It is a widely used measure of
+dispersion that is useful in describing the shape of a distribution.
+
+Coefficient of Variation
+The CV is the ratio of the standard deviation to the mean expressed as a percentage. It is used
+to compare the variability of datasets with different means and is commonly used in fields such
+as biology, chemistry, and engineering.
+The coefficient of variation (CV) is a statistical measure that expresses the amount of variability
+in a dataset relative to the mean. It is a dimensionless quantity that is expressed as a
+percentage.
+The formula for calculating the coefficient of variation is:
+
+CV = (standard deviation / mean) x 100%
+The disadvantage of S.D. and Variance is we cannot directly compare those measures for
+two different quantities/attributes due to different scales and units of those
+quantities/attributes. For example, consider salary in LPA and subject marks. The marks may
+have scale of upto 100s. But, the salary will definitely be less than 100. So, to compare their
+spread, we use C.V. since it’s independent of scale (due to division by mean)
+
+Graphs for Univariate Analysis
+Categorical
+Frequency Distribution Table And Cumulative Frequency
+A frequency distribution table is a table that summarizes the number of times (or
+frequency) that each value occurs in a dataset.
+
+Relative frequency is the proportion or percentage of a category in a dataset or sample. It
+is calculated by dividing the frequency of a category by the total number of observations in
+the dataset or sample.
+
+Cumulative frequency is the running total of frequencies of a variable or category in a
+dataset or sample. It is calculated by adding up the frequencies of the current category and
+all previous categories in the dataset or sample.
+You can use Bar charts to plot frequency of categories.
+
+Numerical
+Frequency Distribution Table and Histogram
+When plotting histograms, make sure that the number of bins or bin size is sufficient
+enough.
+
+Shapes of Histogram
+The general types of histograms observed are:
+●
+●
+●
+●
+●
+
+Symmetric - the perfect bell curve/normal distribution
+Bi-modal - 2 or more than two peaks
+Left/Right skew - Histogram is skewed to one side
+Uniform
+Random/No pattern
+
+Graphs for Bivariate analysis
+Categorical - Categorical
+Contingency Table/Crosstab
+A contingency table, also known as a cross-tabulation or crosstab, is a type of table used in
+statistics to summarize the relationship between two categorical variables. A contingency
+table displays the frequencies or relative frequencies of the observed values of the two
+variables, organized into rows and columns.
+
+Numerical - Numerical
+Scatter Plot
+
+Percentiles and Quantiles
+Quantiles
+Quantiles are statistical measures used to divide a set of numerical data into equal-sized
+groups, with each group containing an equal number of observations. Quantiles are important
+measures of variability and can be used to: understand distribution of data, summarize and
+compare different datasets. They can also be used to identify outliers.
+There are several types of quantiles used in statistical analysis, including:
+●
+
+Quartiles: Divide the data into four equal parts, Q1 (25th percentile), Q2 (50th percentile or
+median), and Q3 (75th percentile).
+
+●
+
+Deciles: Divide the data into ten equal parts, D1 (10th percentile), D2 (20th percentile), ..., D9
+(90th percentile).
+
+●
+
+Percentiles: Divide the data into 100 equal parts, P1 (1st percentile), P2 (2nd percentile), ...,
+P99 (99th percentile).
+
+●
+
+Quintiles: Divides the data into 5 equal parts
+
+Things to remember while calculating these measures:
+● Data should be sorted from low to high
+● You are basically finding the location of an observation
+● They are not actual values in the data
+● All other tiles can be easily derived from Percentiles
+
+Percentile
+A percentile is a statistical measure that represents the percentage of observations in a dataset
+that fall below a particular value. For example, the 75th percentile is the value below which 75%
+of the observations in the dataset fall.
+Formula to calculate the percentile value:
+
+PL = p*(N+1)/100
+where:
+PL = the desired percentile value location
+N = the total number of observations in the dataset
+p = the percentile rank (expressed as a percentage)
+
+Example:
+Find the 75th percentile score from the below data:
+
+78, 82, 84, 88, 91, 93, 94, 96, 98, 99
+1.
+
+After sorting the data and using the formula given, PL = 8.25 i.e. the 8.25th value/data
+point represents the 75th percentile. But here, you obviously don’t or rather you can’t
+have 8.25th point.
+2. But, we do have the 8th and 9th points. We can interpolate the 8.25th value from that.
+We assume a linear relationship between those points and calculate accordingly.
+Since there is 0.25 after 8, we go a quarter from 8th value to the 9th value i.e. our
+required value is a quarter distance from 96 and 98. Thus, our required value is 96.5
+Ofcourse, this is because we have assumed a linear relationship between two successive
+quantiles and since this is discrete data, we can do that. If this was continuous data defined
+by a function, we would have used that function to calculate the percentiles instead of
+assuming linear relationship.
+
+Percentile rank = (X + 0.5*Y)*100/N
+
+Or
+
+X*100/N
+
+X = number of values below the given value
+Y = number of values equal to the given value
+N = total number of values in the dataset
+
+Example:
+For the same data given in previous example, calculate the percentile rank of 96.5
+1.
+
+Using the first formula given above, we get percentile value of 80th percentile, which
+is contradictory because, in the previous example, we calculated the 75th percentile
+to be 96.5
+
+So, as you can see, the two formulas (i.e. the percentile value and percentile rank) are not
+reversible.
+
+5 Number Summary
+The five-number summary is a descriptive statistic that provides a summary of a dataset. It consists
+of five values that divide the dataset into four equal parts, also known as quartiles.
+The five-number summary includes the following values:
+
+Minimum value: The smallest value in the dataset.
+2. First quartile (Q1): The value that separates the lowest 25% of the data from the rest of the
+1.
+
+dataset.
+3. Median (Q2): The value that separates the lowest 50% from the highest 50% of the data.
+
+4. Third quartile (Q3): The value that separates the lowest 75% of the data from the highest
+25% of the data.
+5. Maximum value: The largest value in the dataset.
+The five-number summary is often represented visually using a box plot, which displays the range
+of the dataset, the median, and the quartiles. The five-number summary is a useful way to quickly
+summarize the central tendency, variability, and distribution of a dataset.
+
+Interquartile Range
+The interquartile range (IQR) is a measure of variability based on a dataset's five-number
+summary. Specifically, the IQR is defined as the difference between the third quartile (Q3) and
+the first quartile (Q1) of a dataset.
+
+Covariance
+Covariance is a statistical measure that describes the degree to which two variables are linearly
+related. It measures how much two variables change together, such that when one variable
+increases, does the other variable also increase, or does it decrease?
+●
+
+If the covariance between two variables is positive, it means that the variables tend to move
+together in the same direction.
+
+●
+
+If the covariance is negative, it means that the variables tend to move in opposite directions.
+
+●
+
+A covariance of zero indicates that the variables are not linearly related.
+
+Calculation of Covariance
+
+What problem does Covariance solve?
+First, consider this example:
+1. There are 2 datasets (-5, 0, 5) and (-20, 0, 20). The variance of these 2 data sets is the
+same.
+2. Consider another 2 datasets with more than 1 dimension [ (-1, -1), (0, 0), (1, 1) ] and [ (-1,
+1), (0, 0), (1, -1) ]. The variance of these 2 data sets is the same.
+So, variance alone can’t exactly describe the distribution or the relationship between
+dimensions/features of the dataset. This is where covariance comes in.
+
+Covariance gives a real number output. But, the magnitude itself doesn’t tell us about strength.
+You only get a basic idea about strength. The sign tells us what the relation between those
+attributes is.
+
+Disadvantages of Covariance
+One limitation of covariance is that it does not tell us about the strength of the relationship
+between two variables, since the magnitude of covariance is affected by the scale of the
+variables.
+Also, it only tells us about the linear relationship between the variables.
+
+Covariance of a variable with itself
+In this case, if you use the formula, you will get the variance of that variable itself.
+
+Correlation
+●
+
+Correlation refers to a statistical relationship between two or more variables. Specifically, it
+measures the degree to which two variables are related and how they tend to change
+together.
+
+●
+
+Correlation is often measured using a statistical tool called the correlation coefficient,
+which ranges from -1 to 1. A correlation coefficient of -1 indicates a perfect negative
+correlation, a correlation coefficient of 0 indicates no correlation, and a correlation
+coefficient of 1 indicates a perfect positive correlation.
+
+Here, σx is the standard deviation of variable ‘x’
+
+Correlation and Causation
+The phrase "correlation does not imply causation" means that just because two variables are
+associated with each other, it does not necessarily mean that one causes the other. In other
+words, a correlation between two variables does not necessarily imply that one variable is the
+reason for the other variable's behavior.
+Suppose there is a positive correlation between the number of firefighters present at a fire and
+the amount of damage caused by the fire. One might be tempted to conclude that the presence
+of firefighters causes more damage. However, this correlation could be explained by a third
+variable - the severity of the fire. More severe fires might require more firefighters to be
+present and also cause more damage.
+Thus, while correlations can provide valuable insights into how different variables are related,
+they cannot be used to establish causality. Establishing causality often requires additional
+evidence such as experiments, randomized controlled trials, or well-designed observational
+studies.
+
+Other correlation coefficients
+There are many other correlation coefficients like Pearson’s ‘r’.
+You can find more at this article: www.scribbr.com/statistics/correlation-coefficient/
+Also, in the same website, you will find other cool statistics related to data science:
+www.scribbr.com/category/statistics/
+
+Visualizing Multiple Variables
+1. 3-D Scatter Plots
+2. Hue parameters
+3. Factegrids
+You basically plot multiple graphs in 1 figure
+
+4. Jointplots
+Not technically a multi-dimensional graph. Used for 2-D. But, it’s something new.
+
+5. Pairplots
+
+6. Bubble plot
+
+Random Variables
+A Random Variable is a set of possible values from a random experiment.
+
+Example: The sum of values on the upper faces of two dice when rolled together is a r.v. with a
+Normal/Gaussian probability distribution function.
+Random variables can be of 2 types:
+1. Discrete r.v.
+2. Continuous r.v.
+
+Probability Distributions
+A probability distribution is a list of all of the possible outcomes of a random variable along with
+their corresponding probability values.
+
+Problem with Distribution?
+In many scenarios, the number of outcomes can be much larger, and hence a table would
+be tedious to write down. Worse still, the number of possible outcomes could be infinite, in
+which case, good luck writing a table for that.
+
+Example - Height of people, Rolling 10 dice together
+Solution - Function?
+What if we use a mathematical function to model the relationship between outcome and
+probability?
+
+Note - A lot of time Probability Distribution and Probability Distribution Functions are
+used interchangeably.
+
+Types of Probability Distribution Functions (PDF)
+1. Discrete
+2. Continuous
+
+Famous Distributions
+
+Why are Probability Distributions important?
+●
+●
+
+Gives an idea about the shape/distribution of the data.
+And if our data follows a famous distribution then we automatically know a lot about the
+data.
+
+A note on Parameters
+●
+●
+
+Parameters in probability distributions are numerical values that determine the shape,
+location, and scale of the distribution.
+Different probability distributions have different sets of parameters that determine their
+shape and characteristics, and understanding these parameters is essential in statistical
+analysis and inference.
+
+Probability Distribution Function
+A probability distribution function (PDF) is a mathematical function that describes the probability of
+obtaining different values of a random variable in a particular probability distribution.
+You can have 2 types of probability distribution functions based on whether it is continuous or
+discrete:
+
+Probability Mass Function (PMF) for discrete functions
+2. Probability Density Function (PDF) for continuous functions
+Both of these distribution functions have a Cumulative Distribution Function (CDF) associated
+1.
+
+with them.
+
+Probability Mass Function
+It is a mathematical function that describes the probability distribution of a discrete random
+variable. The PMF of a discrete random variable assigns a probability to each possible value of
+the random variable. The probabilities assigned by the PMF must satisfy two conditions:
+1. The probability assigned to each value must be non-negative (i.e., greater than or equal
+to zero).
+2. The sum of the probabilities assigned to all possible values must equal 1.
+
+[Insert die roll function here]
+
+Cumulative Distribution Function (CDF) for a PMF
+The cumulative distribution function (CDF) F(x) describes the probability that a random
+variable X with a given probability distribution will be found at a value less than or equal to
+x.
+F(x) = P(X <= x)
+
+Probability Density Function
+PDF stands for Probability Density Function. It is a mathematical function that describes the
+probability distribution of a continuous random variable.
+
+Why is it probability density and not probability?
+
+What does the area under the graph represent?
+The
+
+y-axis
+
+represents
+
+Probability Density with respect to the value of r.v.
+
+(probability/r.v.) and the x-axis represents the value of r.v. So, when you take the area
+under the graph, you are basically taking an integral w.r.t. x for the entire range of x. So, the
+total area under the curve is 1 because all values of r.v. are independent, mutually exclusive,
+and exhaustive. Since taking integral is basically summing the probabilities ( i.e. product of
+density and value of r.v. ) which will total 1.
+When you integrate the distribution function from 0 to x, you will get the CDF.
+
+How to calculate Probability of a single value of r.v. ?
+As discussed in the height of population example, you take the smallest interval around the
+value you want and calculate the probability using the integral of probability density.
+
+Density Estimation
+Density estimation is a statistical technique used to estimate the probability density
+function (PDF) of a random variable based on a set of observations or data. In simpler
+terms, it involves estimating the underlying distribution of a set of data points.
+Density estimation can be used for a variety of purposes, such as hypothesis testing, data
+analysis, and data visualization. It is particularly useful in areas such as machine learning,
+where it is often used to estimate the probability distribution of input data or to model the
+likelihood of certain events or outcomes.
+There are various methods for density estimation, including parametric and
+non-parametric approaches. Parametric methods assume that the data follows a specific
+probability distribution (such as a normal distribution), while non-parametric methods do
+not make any assumptions about the distribution and instead, estimate it directly from the
+data.
+Commonly used techniques for density estimation include kernel density estimation (KDE),
+histogram estimation, and Gaussian mixture models (GMMs). The choice of method
+depends on the specific characteristics of the data and the intended use of the density
+estimate.
+
+Parametric Density Estimation
+Parametric density estimation is a method of estimating the probability density function
+(PDF) of a random variable by assuming that the underlying distribution belongs to a
+specific parametric family of probability distributions, such as the normal, exponential, or
+Poisson distributions.
+
+Non - Parametric Density Estimation
+But sometimes the distribution is not clear or it's not one of the famous distributions.
+Non-parametric density estimation is a statistical technique used to estimate the
+probability density function of a random variable without making any assumptions about
+the underlying distribution. It is also referred to as non-parametric density estimation
+because it does not require the use of a predefined probability distribution function, as
+opposed to parametric methods such as the Gaussian distribution.
+
+The non-parametric density estimation technique involves constructing an estimate of the
+probability density function using the available data. This is typically done by creating a
+kernel density estimate.
+Non-parametric density estimation has several advantages over parametric density
+estimation. One of the main advantages is that it does not require the assumption of a
+specific distribution, which allows for more flexible and accurate estimation in situations
+where the underlying distribution is unknown or complex. However, non-parametric
+density estimation can be computationally intensive and may require more data to achieve
+accurate estimates compared to parametric methods.
+Kernel Density Estimation (KDE) is used for nn-parametric density estimation.
+
+Kernel Density Estimation
+Assume this example. you have 6 points. Plot a histogram to understand the distribution.
+
+1.
+
+First you choose a type of kernel (type of distribution). Generally, Gaussian/Normal
+distribution is used.
+2. You draw a Gaussian kernel for each point with that point as mean. you use a specific
+S.D. ( which is called bandwidth in KDE ) for it. (explained later). The bandwidth
+defines the smoothness/spikiness of the KDE plot/curve. Higher the bandwidth,
+smoother and flatter the curve.
+3. Then, for each point, you draw a (temporary) vertical line. Maybe that line will
+intersect multiple kernels i.e. its own kernel and kernels of other points. You add the
+y-values of those intersections to get the total y-value for that point.
+4. Then you use some algorithm to get the curve equation of the KDE plot.
+You can use SKlearn for KDE
+
+How to use PDF in Data Science?
+Consider the ‘Iris’ dataset. Our job is to classify a given data point into some species of the
+‘iris’ flower. We have 4 attributes - sepal length and width, petal length and width. We want
+to determine which of these attributes are more important or distinguishing?
+Consider these PDFs:
+
+From seeing these distributions, you can see that for petal_length and petal_width, the
+distributions for different species are very apart from each other. Meaning, for a randomly
+chosen petal_length or petal_width, there are more chances that you can confidently
+correspond that chosen point to a certain species.
+But, for sepal_length and sepal_width, the distributions are very overlapped. meaning, for
+a randomly chosen sepal_width or sepal_length, there are less chances that we can
+confidently correspond that chosen point to a certain species.
+By simply visually analyzing the graphs, you can see the priority of degree of confidence
+for the attributes being:
+
+petal_width > petal_length > sepal_length > sepal_width
+
+How to use CDF in Data Science?
+
+Consider the same ‘Iris’ example and only the petal_width attribute.
+
+Now, for a random chosen flower with petal_width of 1.6 (shown in red), if you check the
+y-values , it intersects 2 CDFs those of versicolor and virginica. Which implies that there’s
+non zero probability of the chosen flower being either versicolor or virginica.
+Now, looking at the CDFs, you can see that for virginica, the y-value i.e. the probability (not
+density since we are considering CDF) is approx 0.08. Whereas for versicolor, you can see
+that the y-value i.e. probability is approx 0.9 which is way higher. This gives you insight and
+confidence about classification of that flower.
+
+Note:- Here, it is assumed that probability and percentile are used interchangeably i.e. 0.9
+probability means 90% population below that point.
+This is how CDF helps you.
+
+How to use 2D Density Plots ?
+
+The Hue depicts probability density. It’s basically a scatterplot converted/smoothened. If it
+was a scatterplot, more points would have clustered in darker hues.
+
+Normal Distribution
+What is normal distribution?
+Normal distribution, also known as Gaussian distribution, is a probability distribution that is
+commonly used in statistical analysis. It is a continuous probability distribution that is
+symmetrical around the mean, with a bell-shaped curve.
+●
+●
+●
+
+Tail
+Asymptotic in nature
+Lots of points near the mean and very few far away
+
+The normal distribution is characterized by two parameters: the mean (μ) and the standard
+deviation (σ). The mean represents the centre of the distribution, while the standard deviation
+represents the spread of the distribution.
+Denoted as:
+X ~ N(mu, sigma)
+
+Why is it so important?
+Commonality in Nature
+Many natural phenomena follow a normal distribution, such as the heights of people, the
+weights of objects, the IQ scores of a population, and many more. Thus, the normal
+distribution provides a convenient way to model and analyse such data.
+
+PDF equation for Normal Distribution
+
+Standard Normal Variate
+A Standard Normal Variate(Z) is a standardized form of the normal distribution with mean =
+0 and standard deviation = 1.
+Standardizing a normal distribution allows us to compare different distributions with each
+other, and to calculate probabilities using standardized tables or software.
+
+PDF equation for Standard Normal Variate
+
+Why Standardize data?
+Short answer - convenience and standardization (obviously).
+Long answer - standardization of data is important in feature engineering to standardize
+all features i.e. the impact of a feature should be dependent on the feature itself and not its
+scale. Standardization ensures that. Also, centering the data around mean keeps the values
+grounded. Also, just like log tables for multiplication, you can use z-tables for normal
+variates
+
+How to Standardize data?
+
+where, ni,new is the standardized value of the ith data point
+
+Z-tables
+Z-tables are analogous to log tables and are defined for standard normal variates.
+For example, if you wanted to calculate the percentile rank of a data point, you would
+integrate the normal function. Instead, you could standardize the data and use z-tables to
+calculate pre-calculated values. (values can be pre-calculated because mean and S.D. of
+data are predefined, duh!)
+A z-table tells you the area underneath a normal distribution curve, to the left of the
+z-score
+
+Properties of Normal Distribution
+
+Symmetricity
+The normal distribution is symmetric about its mean, which means that the probability of
+observing a value above the mean is the same as the probability of observing a value below
+the mean. The bell-shaped curve of the normal distribution reflects this symmetry.
+
+Measures of Central Tendencies are equal
+mean = median = mode
+
+Empirical Rule
+The normal distribution has a well-known empirical rule, also called the 68-95-99.7 rule,
+which states that approximately 68% of the data falls within one standard deviation of the
+mean, about 95% of the data falls within two standard deviations of the mean, and about
+99.7% of the data falls within three standard deviations of the mean.
+
+Area under the curve
+Area under the curve is obviously 1
+
+CDF of Normal Distribution
+
+Skewness
+A normal distribution is a bell-shaped, symmetrical distribution with a specific mathematical
+formula that describes how the data is spread out. Skewness indicates that the data is not
+symmetrical, which means it is not normally distributed.
+Skewness is a measure of the asymmetry of a probability distribution. It is a statistical measure that
+describes the degree to which a dataset deviates from the normal distribution.
+In a symmetrical distribution, the mean, median, and mode are all equal. In contrast, in a skewed
+distribution, the mean, median, and mode are not equal, and the distribution tends to have a longer
+tail on one side than the other.
+Skewness can be positive, negative, or zero. A positive skewness means that the tail of the
+distribution is longer on the right side, while a negative skewness means that the tail is longer on
+the left side. A zero skewness indicates a perfectly symmetrical distribution.
+
+Note:- Left skew means the tail is on the left side and the heap is on right side i.e. Negative skew
+
+How is Skewness calculated?
+3rd statistical moment formula:
+
+3
+𝑛
+(𝑥 − 𝑥)
+∑( 𝑠 )
+(𝑛−1)(𝑛−2)
+Where, n = no. of points in sample,
+s = std of sample.
+
+Statistical Moments
+1. Mean
+2. Standard deviation
+3. Skewness
+4. Kurtosis
+
+Generally, as the rank of statistical moment increases, the power of x increases (Example: 1st
+statistical moment i.e. mean, has power of x as 1. 3rd statistical moment i.e. skewness has power of
+3.)
+
+Kurtosis
+Kurtosis is the 4th statistical moment. In probability theory and statistics, kurtosis (meaning
+"curved, arching") is a measure of the "tailedness" of the probability distribution of a real-valued
+random variable. Like skewness, kurtosis describes a particular aspect of a probability distribution.
+Consider any 2 random distributions with the same mean, skew and standard deviation. Do you
+think they will look the same? Think again! This is where kurtosis comes in:
+<Insert Image>
+Kurtosis is basically the degree of tail being fat i.e. the degree of frequency/density of “outliers”.
+NOTE: Kurtosis is NOT degree of peakedness (degree of height or widths of peaks)
+
+<Insert Image>
+
+Practical use-case
+In finance, kurtosis risk refers to the risk associated with the possibility of extreme outcomes
+or "fat tails" in the distribution of returns of a particular asset or portfolio.
+If a distribution has high kurtosis, it means that there is a higher likelihood of extreme events
+occurring, either positive or negative, compared to a normal distribution.
+In finance, kurtosis risk is important to consider because it indicates that there is a greater
+probability of large losses or gains occurring, which can have significant implications for
+investors. As a result, investors may want to adjust their investment strategies to account for
+kurtosis risk.
+
+Excess Kurtosis
+Excess kurtosis is a measure of how much more peaked or flat a distribution is compared to a
+normal distribution, which is considered to have a kurtosis of 0. It is calculated by subtracting 3
+from the sample kurtosis coefficient.
+
+Types of Kurtosis
+
+Leptokurtic
+
+A distribution with positive excess kurtosis is called leptokurtic. "Lepto-" means "slender".
+In terms of shape, a leptokurtic distribution has fatter tails. This indicates that there are
+more extreme values or outliers in the distribution.
+
+Example - Assets with positive excess kurtosis are riskier and more volatile than those with
+a normal distribution, and they may experience sudden price movements that can result in
+significant gains or losses.
+
+Platykurtic
+A distribution with negative excess kurtosis is called platykurtic. "Platy-'' means "broad". In
+terms of shape, a platykurtic distribution has thinner tails. This indicates that there are
+fewer extreme values or outliers in the distribution.
+Assets with negative excess kurtosis are less risky and less volatile than those with normal
+distribution, and they may experience more gradual price movements that are less likely to
+result in large gains or losses.
+
+Mesokurtic
+Distributions with zero excess kurtosis are called mesokurtic. The most prominent
+example of a mesokurtic distribution is the normal distribution family, regardless of the
+values of its parameters.
+Mesokurtic is a term used to describe a distribution with an excess kurtosis of 0, indicating
+that it has the same degree of "peakedness" or "flatness" as a normal distribution.
+Example - In finance, a mesokurtic distribution is considered to be the ideal distribution of
+assets or portfolios, as it represents a balance between risk and return.
+
+QQ Plot
+How to find if a given distribution is normal or not?
+
+Visual Inspection:
+One of the easiest ways to check for normality is to visually inspect a histogram or a
+density plot of the data. A normal distribution has a bell-shaped curve, which means that
+
+the majority of the data falls in the middle, and the tails taper off symmetrically. If the
+distribution looks approximately bell-shaped, it is likely to be normal.
+
+QQ Plot:
+Another way to check for normality is to create a normal probability plot (also known as a
+Q-Q plot) of the data. A normal probability plot plots the observed data against the
+expected values of a normal distribution. If the data points fall along a straight line, the
+distribution is likely to be normal.
+
+Statistical Tests:
+There are several statistical tests that can be used to test for normality, such as the
+Shapiro-Wilk test, the Anderson-Darling test, and the Kolmogorov-Smirnov test. These
+tests compare the observed data to the expected values of a normal distribution and
+provide a p-value that indicates whether the data is likely to be normal or not. A p-value
+less than the significance level (usually 0.05) suggests that the data is not normal.
+
+What is a QQ Plot and how is it plotted?
+A QQ plot (quantile-quantile plot) is a graphical tool used to assess the similarity of the
+distribution of two sets of data. It is particularly useful for determining whether a set of data
+follows a normal distribution.
+In a QQ plot, the quantiles of the two sets of data are plotted against each other. The quantiles
+of one set of data are plotted on the x-axis, while the quantiles of the other set of data are
+plotted on the y-axis. If the two sets of data have the same distribution, the points on the QQ
+plot will fall on a straight line. If the two sets of data do not have the same distribution, the
+points will deviate from the straight line.
+
+Uniform distribution
+
+What is Uniform Distribution and its types?
+In probability theory and statistics, a uniform distribution is a probability distribution where all
+outcomes are equally likely within a given range. This means that if you were to select a random
+value from this range, any value would be as likely as any other value.
+Types
+Denoted as
+Examples
+●
+●
+●
+●
+
+The height of a person randomly selected from a group of individuals whose height range
+from 5'6" to 6'0" would follow a continuous uniform distribution.
+The time it takes for a machine to produce a product, where the production timeranges
+from 5 to 10 minutes, would follow a continuous uniform distribution.
+The distance that a randomly selected car travels on a tank of gas, where the distance
+ranges from 300 to 400 miles, would follow a continuous uniform distribution.
+The weight of a randomly selected apple from a basket of apples that weighs between 100
+and 200 grams, would follow a continuous uniform distribution.
+
+Application in Machine Learning and Data Science
+Random initialization: In many machine learning algorithms, such as neural networks and
+k-means clustering, the initial values of the parameters can have a significant impact on the
+final result. Uniform distribution is often used to randomly initialize the parameters, as it
+ensures that all values in the range have an equal probability of being selected.
+Sampling: Uniform distribution can also be used for sampling. For example, if you have a
+dataset with an equal number of samples from each class, you can use uniform distribution to
+randomly select a subset of the data that is representative of all the classes.
+Data augmentation: In some cases, you may want to artificially increase the size of your dataset
+by generating new examples that are similar to the original data. Uniform distribution can be
+used to generate new data points that are within a specified range of the original data.
+Hyperparameter tuning: Uniform distribution can also be used in hyperparameter tuning,
+where you need to search for the best combination of hyperparameters for a machine learning
+model. By defining a uniform prior distribution for each hyperparameter, you can sample from
+the distribution to explore the hyperparameter space.
+
+Log Normal Distribution
+In probability theory and statistics, a lognormal distribution is a heavy tailed continuous probability
+distribution of a random variable whose logarithm is normally distributed.
+Examples
+●
+●
+●
+
+The length of comments posted in Internet discussion forums follows a log-normal
+distribution.
+Users' dwell time on online articles (jokes, news etc.) follows a log-normal distribution.
+The length of chess games tends to follow a log-normal distribution.In economics, there is
+evidence that the income of 97% - 99% of the population is distributed log-normally.
+
+Pareto Distribution
+Pareto Distribution
+The Pareto distribution is a type of probability distribution that is commonly used to model the
+distribution of wealth, income, and other quantities that exhibit a similar power-law behavior.
+
+What is Power Law?
+In mathematics, a power law is a functional relationship between two variables, where one
+variable is proportional to the power of the other. Specifically, if y and x are two variables
+related by a power law, then the relationship can be written as:
+y = k * x^a
+Vilfredo Pareto originally used this distribution to describe the allocation of wealth among
+individuals since it seemed to show rather well the way that a larger portion of the wealth of
+any society is owned by a smaller percentage of the people in that society. He also used it to
+describe the distribution of income. This idea is sometimes expressed more simply as the
+
+Pareto principle or the "80-20 rule" which says that 20% of the population controls 80% of the
+wealth.
+
+Graph & Parameters
+
+Examples
+The sizes of human settlements (few cities, many hamlets/villages) File size distribution of
+Internet traffic which uses the TCP protocol (many smaller files, few larger ones)
+
+Bernoulli Distribution
+Bernoulli distribution is a probability distribution that models a binary outcome, where the
+outcome can be either success (represented by the value 1) or failure (represented by the value 0).
+The Bernoulli distribution is named after the Swiss mathematician Jacob Bernoulli, who first
+introduced it in the late 1600s.
+The Bernoulli distribution is characterized by a single parameter, which is the probability of
+success, denoted by p. The probability mass function (PMF) of the Bernoulli distribution is:
+The Bernoulli distribution is commonly used in machine learning for modeling binary outcomes,
+such as whether a customer will make a purchase or not, whether an email is spam or not, or
+whether a patient will have a certain disease or not.
+
+Binomial Distribution
+Binomial distribution is a probability distribution that describes the number of successes in a fixed
+number of independent Bernoulli trials with two possible outcomes (often called "success" and
+"failure"), where the probability of success is constant for each trial. The binomial distribution is
+characterized by two parameters: the number of trials n and the probability of success p.
+
+Criteria:
+The process consists of n trials only 2 exclusive outcomes are possible, a success and a failure.
+P(success) = p and P(failure) = 1-p and it is fixed from trial to trialThe trials are independent.
+
+Binary classification problems:
+In binary classification problems, we often model the probability of an event happening as a
+binomial distribution. For example, in a spam detection system, we may model the
+probability of an email being spam or not spam using a binomial distribution.
+
+Hypothesis testing:
+In statistical hypothesis testing, we use the binomial distribution to calculate the
+probability of observing a certain number of successes in a given number of trials,
+assuming a null hypothesis is true. This can be used to make decisions about whether a
+certain hypothesis is supported by the data or not.
+
+Logistic regression:
+Logistic regression is a popular machine learning algorithm used for classification
+problems. It models the probability of an event happening as a logistic function of the input
+variables. Since the logistic function can be viewed as a transformation of a linear
+combination of inputs, the output of logistic regression can be thought of as a binomial
+distribution.
+
+A/B testing:
+A/B testing is a common technique used to compare two different versions of a product,
+web page, or marketing campaign. In A/B testing, we randomly assign individuals to one of
+two groups and compare the outcomes of interest between the groups. Since the outcomes
+are often binary (e.g., click- through rate or conversion rate), the binomial distribution can
+be used to model the distribution of outcomes and test for differences between the groups.
+
+Sampling Distribution
+Sampling distribution is a probability distribution that describes the statistical properties of a
+sample statistic (such as the sample mean or sample proportion) computed from multiple
+independent samples of the same size from a population.
+
+Why Sampling Distribution is important?
+Sampling distribution is important in statistics and machine learning because it allows us to
+estimate the variability of a sample statistic, which is useful for making inferences about the
+population. By analyzing the properties of the sampling distribution, we can compute
+confidence intervals, perform hypothesis tests, and make predictions about the population
+based on the sample data.
+
+The Central Limit Theorem
+The Central Limit Theorem (CLT) states that the distribution of the sample means of a large number
+of independent and identically distributed random variables will approach a normal distribution,
+regardless of the underlying distribution of the variables.
+The conditions required for the CLT to hold are:
+1. The sample size is large enough, typically greater than or equal to 30.
+2. The sample is drawn from a finite population or an infinite population with a finite variance.
+3. The random variables in the sample are independent and identically distributed.
+The CLT is important in statistics and machine learning because it allows us to make probabilistic
+inferences about a population based on a sample of data. For example, we can use the CLT to
+construct confidence intervals, perform hypothesis tests, and make predictions about the
+population mean based on the sample data. The CLT also provides a theoretical justification for
+many commonly used statistical techniques, such as t-tests, ANOVA, and linear regression.
+
+Case Study - What is the average income of Indians
+Step-by-step process:
+
+1.
+
+Collect multiple random samples of salaries from a representative group of Indians. Each
+sample should be large enough (usually, n > 30) to ensure the CLT holds. Make sure the
+samples are representative and unbiased to avoid skewed results.
+
+2. Calculate the sample mean (average salary) and sample standard deviation for each sample.
+3. Calculate the average of the sample means. This value will be your best estimate of the
+population mean (average salary of all Indians).
+4. Calculate the standard error of the sample means, which is the standard deviation of the
+sample means divided by the square root of the number of samples.
+5. Calculate the confidence interval around the average of the sample means to get a range
+within which the true population mean likely falls. For a 95% confidence interval:
+lower_limit = average_sample_means - 1.96 * standard_error
+upper_limit = average_sample_means + 1.96 * standard_error
+6. Report the estimated average salary and the confidence interval.
+
+Remember that the validity of your results depends on the quality of your data and the
+representativeness of your samples. To obtain accurate results, it's crucial to ensure that your
+samples are unbiased and representative.
+
+Population Vs Sample
+Population
+A population is the entire group or set of individuals, objects, or events that are searcher wants
+to study or draw conclusions about. It can be people, animals, plants, or even inanimate objects,
+depending on the context of the study. The population usually represents the complete set of
+possible data points or observations.
+
+Sample
+A sample is a subset of the population that is selected for study. It is a smaller group that is
+intended to be representative of the larger population. Researchers collect data from the
+sample and use it to make inferences about the population as a whole. Since it is often
+
+impractical or impossible to collect data from every member of a population, samples are used
+as an efficient and cost-effective way to gather information.
+
+Parameter Vs Estimate/Statistic
+Parameter
+A parameter is a numerical value that describes a characteristic of a population.Parameters are
+usually denoted using Greek letters, such as μ (mu) for the population mean orσ (sigma) for the
+population standard deviation. Since it is often difficult or impossible to obtain data from an
+entire population, parameters are usually unknown and must be estimated based on available
+sample data.
+
+Statistic
+A statistic is a numerical value that describes a characteristic of a sample, which is a subset of
+the population. By using statistics calculated from a representative sample,researchers can
+make inferences about the unknown respective parameter of the population. Common
+statistics include the sample mean (denoted by , pronounced "x-bar"), the sample median, and
+the sample standard deviation (denoted by s).
+
+Inferential Statistics
+Inferential statistics is a branch of statistics that focuses on making predictions, estimations, or
+generalizations about a larger population based on a sample of data taken from that population. It
+involves the use of probability theory to make inferences and draw conclusions about the
+characteristics of a population by analysing a smaller subset or sample.
+The key idea behind inferential statistics is that it is often impractical or impossible to collect data
+from every member of a population, so instead, we use a representative sample to make inferences
+about the entire group. Inferential statistical techniques include hypothesis testing,confidence
+intervals, and regression analysis, among others.
+These methods help researchers answer questions like:
+● Is there a significant difference between two groups?
+● Can we predict the outcome of a variable based on the values of other variables?
+
+●
+
+What is the relationship between two or more variables?Inferential statistics are widely used
+in various fields, such as economics, social sciences,medicine, and natural sciences, to make
+informed decisions and guide policy based on limited data.
+
+Point Estimate
+A point estimate is a single value, calculated from a sample, that serves as the best guess or
+approximation for an unknown population parameter, such as the mean or standard deviation.
+Point estimates are often used in statistics when we want to make inferences about a population
+based on a sample.
+Example:
+● Consider a Youtuber with 100k subscribers and wants to calculate the
+mean/std/median/<any statistic> of his subscribers. He/she can’t realistically collect the
+age of all his subscribers. Instead he, may take a sample (collecting the age values for those
+subscribers who are attending a certain live class) and calculate the mean/std/<any
+statistic>
+● To maybe increase the accuracy of this guesstimate, he may take these samples for a lot of
+his classes (assuming at least some students to be different in each class for proper
+representation of population (we don’t want bias now, do we?)) and then calculate the
+means/std/<any statistic> for all of them AND then, computing the same statistic on all the
+computed statistics. It’s like calling the same function on all levels of a tree.
+The question is; is this value reliable? Or rather… How reliable is this value? (These are two different
+questions with different implications)
+
+Parametric vs Non parametric tests
+Parametric Tests
+Parametric tests are a family of statistical tests that assume the sample data comes from a
+population that follows a probability distribution based on a fixed set of parameters. These
+tests are powerful and efficient but require certain conditions to be met:
+●
+
+Assumption of Normality: The data should follow a normal (Gaussian) distribution.
+
+●
+
+●
+
+Interval or Ratio Scale: The data should be measured on an interval or ratio scale, meaning
+it's quantitative and possesses the properties of order, equal intervals, and a natural zero
+point.
+Homogeneity of Variances: The variance among the groups being compared should be
+approximately equal.
+
+Because of these assumptions, when conditions are met, parametric tests can provide more
+accurate and specific outcomes. Common examples include the t-test (used to compare the
+means of two groups) and the ANOVA (used to compare the means among three or more
+groups).
+
+Non-Parametric Tests
+Non-parametric tests, on the other hand, do not assume your data comes from a specific
+distribution. These tests are more flexible and are used when the assumptions for parametric
+tests are not met. They can be applied to ordinal data (data that can be ranked but not
+measured numerically) or when the sample size is too small to determine the distribution. The
+key features include:
+●
+●
+●
+
+No Assumption of Distribution: They do not require the data to follow a normal distribution.
+Different Types of Data: They are suitable for ordinal, nominal, and interval/ratio data that
+doesn't meet the assumptions of normality.
+Robustness: They are more robust to outliers and the shape of the data distribution.
+
+However, non-parametric tests are generally less powerful than parametric tests, meaning if
+the parametric test assumptions are met, a parametric test could potentially provide a more
+precise outcome. Examples include the Mann-Whitney U test (a non-parametric alternative to
+the t-test for two groups) and the Kruskal-Wallis test (a non-parametric alternative to ANOVA).
+In summary, the choice between parametric and non-parametric tests hinges on the nature of your
+data and whether the assumptions required for parametric tests are met. If your data adheres to
+these assumptions, parametric tests can offer more strength and precision. However, when these
+conditions aren't satisfied, non-parametric tests provide a reliable alternative for analyzing your
+data.
+
+Confidence Interval
+Confidence interval, in simple words, is a range of values within which we expect a particular
+population parameter, like a mean, to fall. It's a way to express the uncertainty around an estimate
+
+obtained from a sample of data. Confidence level, usually expressed as a percentage like 95%,
+indicates how sure we are that the true value lies within the interval.
+Confidence Interval = [ Point Estimate + Margin of Error, Point Estimate - Margin of Error ]
+Ways to calculate CI:
+1. z-procedure (also known as Sigmna Known) ( used when std of POPULATION is known,
+which is rare)
+2. t-procedure
+Confidence Interval is created for Parameters and not statistics. Statistics help us get the
+confidence interval for a parameter.
+
+Confidence Interval (Sigma Known) (Z procedure)
+
+Assumptions
+1. Random sampling: The data must be collected using a random sampling method to
+ensure that the sample is representative of the population. This helps to minimize biases
+and ensures that the results can be generalized to the entire population.
+2. Known population standard deviation: The population standard deviation (σ) must be
+known or accurately estimated. In practice, the population standard deviation is often
+unknown, and the sample standard deviation (s) is used as an estimate. However, if the
+sample size is large enough, the sample standard deviation can provide a reasonably
+accurate approximation.
+3. Normal distribution or large sample size: The Z-procedure assumes that the underlying
+population is normally distributed. However, if the population distribution is not normal,
+the Central Limit Theorem can be applied when the sample size is large (usually, sample
+size n ≥ 30 is considered large enough). According to the Central Limit Theorem, the
+sampling distribution of the sample mean will approach a normal distribution as the sample
+size increases, regardless of the shape of the population distribution.
+
+Now, for that mysterious alpha/2 part in the equation:
+(1 - alpha) is the the confidence level.
+
+Therefore, alpha = 0.025 if we assume CI as 95%.
+Now, what does this get us? Well, look at the below image. The area shaded is (1-alpha) and
+represents the probability (in our case, confidence) that the value we assume is correct. Now,
+by symmetry, the other areas (probabilities) are alpha/2.
+We want the value of x (x-axis) that gives (alpha/2) probability or area. We can simply find it
+using a z-table. In our case, for (alpha/2 = 0.025), we get the x-value as -2. But, we consider
+only the magnitude right now, because the mean is at center. So, the value will be 2 for Z.
+
+Interpreting Confidence Intervals
+A confidence interval is a range of values within which a population parameter, such as the
+population mean, is estimated to lie with a certain level of confidence. The confidence interval
+provides an indication of the precision and uncertainty associated with the estimate. To
+interpret the confidence interval values, consider the following points: Confidence level: The
+confidence level (commonly set at 90%, 95%, or 99%) represents the probability that the
+confidence interval will contain the true population parameter if the sampling and estimation
+process were repeated multiple times. For example, a 95% confidence interval means that if you
+were to draw 100 different samples from the population and calculate the confidence interval
+for each, approximately 95 of those intervals would contain the true population parameter.
+Let’s take another example. Let’s take the age of all people in the entire world. I want to
+calculate its mean. Now, obviously, this mean has a definite value because the population is
+finite and age values are discrete. But, it’s impossible to actually measure the age of all people in
+the world. So, we take samples! We do some CLT magic and get a PDF (sampling distribution).
+Alas! This is a continuous curve. We expected a discrete value! It’s a classic case of probability
+density vs probability. So… we assume an interval. Now, the precision actually depends on us.
+We could go with 99% or.. 99.99% or 99.999% and on and on and on… This is exactly the
+confidence level we were talking about.
+
+Confidence level
+The confidence level (commonly set at 90%, 95%, or 99%) represents the probability that
+the confidence interval will contain the true population parameter if the sampling and
+estimation process were repeated multiple times. For example, a 95% confidence interval
+means that if you were to draw 100 different samples from the population and calculate the
+confidence interval for each, approximately 95 of those intervals would contain the true
+population parameter.
+
+Interval range
+The width of the confidence interval gives an indication of the precision of the estimate. A
+narrower confidence interval suggests a more precise estimate of the population
+parameter, while a wider interval indicates greater uncertainty. The width of the interval
+depends on the sample size, variability in the data, and the desired level of confidence.
+
+Interpretation
+To interpret the confidence interval values, you can say that you are "X% confident that the
+true population parameter lies within the range (lower limit, upper limit)." Keep in mind
+that this statement is about the interval, not the specific point estimate, and it refers to the
+confidence level you chose when constructing the interval.
+
+●
+
+●
+
+●
+
+Generally, Confidence intervals and confidence level are sort of inversely proportional if
+other factors are kept constant. For example, 100% isn’t theoretically possible, because that
+will be like a single point in the PDF having probability that doesn’t approach zero.
+As Confidence level decreases, you can reduce the range of the interval. For example, if
+someone asks with how much confidence can you say that Rohit/Virat will make between
+97-102 runs, I would say it with low confidence because the interval is very small. But, if
+someone asks with how much confidence can you say that Rohit/Virat will score between 0
+and 500 in an T20 match, I would say 100%. because those are the theoretical limits of runs
+that can be scored in a match.
+So, generally, as you approach 100% confidence level, your confidence interval expands to its
+theoretical limits (-inf, +inf)
+
+What is the trade-off ?
+
+Factors Affecting Margin of Error
+
+Confidence Level (1-alpha)
+●
+●
+●
+●
+
+Okay, so from the formula, you can easily see the relationship between CL and Margin
+of Error.
+It’s proportional (non-linear)
+As the CL increases, alpha decreases and hence Z also decreases which makes the
+margin of error smaller. And vice versa.
+You can observe this relationship in the graph below.
+
+Sample Size
+Well, from the formula, you can see the inverse proportionality.
+
+As you see, there’s a significant drop in MoE as sample size increases initially, but that drop
+gets stagnated with further increase in sample size. So, it’s a trade-off. After a sample size
+of 30, increasing the sample size will only get you slightly better MoE. So, generally,
+
+Population Standard Deviation
+From the formula, you can see linear direct proportionality from the formula.
+
+Disadvantages of z-procedure
+The main drawback is the critical assumption that the population std is known. That is rarely
+seen in real life.
+
+Confidence Interval (Sigma Not Known)
+t-procedure shines when population std is not known and/or the sample sizes used are too
+low.
+
+Assumptions
+
+1. Random sampling: The data must be collected using a random sampling method to
+ensure that the sample is representative of the population. This helps to minimize biases
+and ensures that the results can be generalized to the entire population.
+2. Sample standard deviation: The population standard deviation (σ) is unknown, and the
+sample standard deviation (s) is used as an estimate. The t-distribution is specifically
+designed to account for the additional uncertainty introduced by using the sample
+standard deviation instead of the population standard deviation.
+3. Approximately normal distribution: The t-procedure assumes that the underlying
+population is approximately normally distributed, or the sample size is large enough for the
+Central Limit Theorem to apply. If the population distribution is heavily skewed or has
+extreme outliers, the t-procedure may not be accurate, and non-parametric methods
+should be considered.
+● If the distribution is not normal, then the sample size must be high for CLT to be
+applied.
+● But, if the distribution is normal, then smaller sample sizes are allowed (and this is
+where t-procedure shines)
+3. Independent observations: The observations in the sample should be independent of each
+other. In other words, the value of one observation should not influence the value of
+another observation. This is particularly important when working with time series data or
+data with inherent dependencies.
+
+●
+●
+●
+
+●
+●
+●
+●
+●
+●
+
+We don’t have population std, so we have to use sample std. This is where the complexity
+arrives. Because a single sample’s std might not be obviously close to population std.
+So, what can we do? We can use the Central Limit Theorem (Duhh!!) But, it can only be used
+if the sample size is large enough. If not, we will have to use something else.
+Since we are using sample std instead of population std, we get a new distribution student’s t-distribution. This is a theoretical and artificial distribution. It doesn’t exist in real
+life. It's a synthetic distribution. You won’t observe it in nature.
+It is given by degrees of freedom i.e. (n-1)
+As sample size (n) approaches infinity (assuming population to be infinite), df also
+approaches infinity and the student’s t-distribution approaches a normal distribution.
+Which is intuitive, because if sample size = population size, we would basically be
+calculating population std.
+So, in the Conf Int formula, we use sample std instead of population std. Also, we use T at
+(alpha/2) instead of Z at (alpha/2)
+Also, generally for the same Conf Level, T at (alpha/2) is higher than Z at (alpha/2), which is
+also intuitive because for a lower degree of freedom, there is more uncertainty.
+We use t-table instead of z-table for this purpose.
+
+Student's t Distribution
+Student's t-distribution, or simply the t-distribution, is a probability distribution that arises
+when estimating the mean of a normally distributed population when the sample size is small
+and the population standard deviation is unknown. It was introduced by William Sealy Gosset,
+who published under the pseudonym "Student."
+The t-distribution is similar to the normal distribution (also known as the Gaussian distribution
+or the bell curve) but has heavier tails. The shape of the t-distribution is determined by the
+degrees of freedom, which is closely related to the sample size (degrees of freedom = sample
+size - 1). As the degrees of freedom increase (i.e., as the sample size increases), the
+t-distribution approaches the normal distribution.
+In hypothesis testing and confidence interval estimation, the t-distribution is used in place of
+the normal distribution when the sample size is small (usually less than 30) and the population
+standard deviation is unknown. The t-distribution accounts for the additional uncertainty that
+arises from estimating the population standard deviation using the sample standard deviation.
+To use the t-distribution in practice, you look up critical t-values from a t-distribution table,
+which provides values corresponding to specific degrees of freedom and confidence levels (e.g.,
+95% confidence). These critical t-values are then used to calculate confidence intervals or
+perform hypothesis tests.
+
+Hypothesis Testing
+A statistical hypothesis test is a method of statistical inference used to decide whether the data at
+hand sufficiently support a particular hypothesis. Hypothesis testing allows us to make probabilistic
+statements about population parameters.
+
+Null and Alternate Hypothesis
+1. Null hypothesis (H0): In simple terms, the null hypothesis is a statement that assumes there is
+no significant effect or relationship between the variables being studied. It serves as the
+starting point for hypothesis testing and represents the status quo or the assumption of no
+effect until proven otherwise. The purpose of hypothesis testing is to gather evidence (data) to
+either reject or fail to reject the null hypothesis in favor of the alternative hypothesis, which
+claims there is a significant effect or relationship.
+Note: Failing to reject Null Hypothesis doesn’t prove the equivalence of the two hypotheses.
+Consider a Null Hypothesis H0: Drug A and Drug B are indifferent in terms of effectiveness.
+These drugs may have different working mechanisms, chemical and physical structures, etc.
+But, if they are equally effective, that doesn’t mean Drug A and Drug B are the same.
+2. Alternative hypothesis (H1 or Ha): The alternative hypothesis, is a statement that contradicts
+the null hypothesis and claims there is a significant effect or relationship between the variables
+being studied. It represents the research hypothesis or the claim that the researcher wants to
+support through statistical analysis.
+Important Points
+●
+
+How to decide what will be Null hypothesis and what will be Alternate Hypothesis(Typically
+the Null hypothesis says nothing new is happening)
+
+●
+
+We try to gather evidence to reject the null hypothesis
+
+●
+
+It's important to note that failing to reject the null hypothesis doesn't necessarily mean that
+the null hypothesis is true; it just means that there isn't enough evidence to support the
+alternative hypothesis.
+
+●
+
+Hypothesis tests are similar to jury trials, in a sense. In a jury trial, H0 is similar to the
+not-guilty verdict, and Ha is the guilty verdict. You assume in a jury trial that the defendant
+isn’t guilty unless the prosecution can show beyond a reasonable doubt that he or she is
+
+guilty. If the jury says the evidence is beyond a reasonable doubt, they reject H0, not guilty,
+in favor of Ha , guilty.
+
+Steps involved in Hypothesis Testing
+There are two ways in which Hypothesis testing is generally done:
+1. Rejection region approach
+2. p-value approach
+
+Rejection Region Approach
+1. Formulate a Null and Alternate hypothesis
+2. Select a significance level
+● This is the probability of rejecting the null hypothesis when it is actually true, usually
+set at 0.05 or 0.01.
+● You can call it the acceptable threshold.
+● 0.05 significance level means out of 100 trials, it is tolerable that upto 5 trials don’t
+support the given hypothesis.
+● significance level is sort of the opposite of confidence level
+● Remember the (alpha) term in z-procedure? Yeah! That’s significant level!
+3. Check assumptions:
+A. Type of distribution
+B. Do you have population parameters or not?
+C. Is the data numeric, categoric, ordinal, mixed, etc?
+D. etc.
+4. Decide which test is appropriate (Z-test, T-test, Chi-square test, ANOVA)
+5. State the relevant test statistic (example: z-score for Z-test, t-statistic for T-test, etc)
+6. Conduct the test
+7. Reject or not reject the Null Hypothesis (based on the obtained value of relevant test
+statistic)
+8. Interpret the result
+
+Performing a z-test
+
+Example: Suppose a company is evaluating the impact of a new training program on the
+productivity of its employees. The company has data on the average productivity of its
+employees before implementing the training program. The average productivity was 50
+units per day with a known population standard deviation of 5 units. After implementing
+the training program, the company measures the productivity of a random sample of 30
+employees. The sample has an average productivity of 53 units per day. The company wants
+to know if the new training program has significantly increased productivity.
+
+Example: Suppose a snack food company claims that their Lays wafer packets contain an
+average weight of 50 grams per packet. To verify this claim, a consumer watchdog
+organization decides to test a random sample of Lays wafer packets. The organization
+wants to determine whether the actual average weight differs significantly from the
+claimed 50 grams. The organization collects a random sample of 40 Lays wafer packets and
+measures their weights. They find that the sample has an average weight of 49 grams, with
+a known population standard deviation of 4 grams.
+
+Rejection Region
+Significance level - denoted as α (alpha), is a predetermined threshold used in hypothesis
+testing to determine whether the null hypothesis should be rejected or not. It represents
+the probability of rejecting the null hypothesis when it is actually true, also known as Type
+1 error.
+The critical region is the region of values that corresponds to the rejection of the null
+hypothesis at some chosen probability level.
+
+Problem with Rejection Region Approach
+●
+●
+
+●
+
+●
+
+●
+●
+
+Assume a hypothesis test using z-test. We are considering a significance level of 0.05.
+And we are using a two-tailed test.
+Assuming a Normal distribution, the critical values for this test is 1.96 (from z-table).
+Thus, for us to reject the null hypothesis, the z-score must be greater than 1.96 or
+less than -1.96.
+If we get a z-score as 1.97 (>1.96) we can successfully reject the null hypothesis. But,
+look at it. The z-score is just 0.01 greater than the critical value. That’s a very small
+margin. There’s no buffer zone.
+If we get a z-score of 3.5 (>>1.96) we can also successfully reject the null hypothesis.
+In this case, the margin is very high. But, there the measure of how high the margin is
+didn’t affect our rejecting the Null hypothesis.
+Herein lies the problem. We don’t have a perfect way to express our confidence with
+which we are rejecting the null hypothesis.
+For this reason, the rejection region approach isn’t used generally. p-value test is
+preferred.
+
+Type 1 and Type 2 Error
+In hypothesis testing, there are two types of errors that can occur when making a decision
+about the null hypothesis: Type I error and Type II error
+
+.
+
+Type-I (False Positive)
+Error occurs when the sample results lead to the rejection of the null hypothesis when it is
+in fact true.
+Example: Consider a two tailed z-test with significance level of 0.05. Thus the critical
+regions will be greater than 1.96 or less than -1.96. Assume that in this case, we need to fail
+to reject the null hypothesis i.e. we know that the null hypothesis is true. But even then we
+get a z-score that lies in the critical region, which will lead to rejection of the hypothesis.
+This is a False positive. We could potentially change this result by changing the significance
+level to 0.01 thus reducing the critical region, which would decrease the possibility of the
+z-score lying in the rejection/critical region.
+In other words, it's the mistake of finding a significant effect or relationship when there is
+none. The probability of committing a Type I error is denoted by α (alpha), which is also
+known as the significance level. By choosing a significance level, researchers can control
+the risk of making a Type I error.
+
+Type-II (False Negative)
+Error occurs when based on the sample results, the null hypothesis is not rejected when it
+is in fact false.
+Example: Consider a two tailed z-test with significance level of 0.05. Thus the critical
+regions will be greater than 1.96 or less than -1.96. Assume that in this case, we need to
+reject the null hypothesis i.e. we know that the null hypothesis is false. But even then we
+get a z-score that doesn’t lie in the critical region, which will lead to failure of rejection of
+the hypothesis.
+
+This is a False Negative. We could potentially change this result by changing the
+significance level to 0.1 thus increasing the critical region, which would increase the
+possibility of the z-score lying in the rejection/critical region.
+This means that the researcher fails to detect a significant effect or relationship when one
+actually exists. The probability of committing a Type II error is denoted by β (beta).
+
+Trade-off between Type 1 and Type 2 errors
+As you saw, type 1 and type 2 errors are sort of opposite to each other. Hence, there needs
+to be a sweet spot or a sweet compromise that we need to make to choose the optimum
+value for a critical region.
+It depends on the case/situation. You need to decide whether type 1 or type 2 error needs
+to be prioritically minimum.
+
+One sided/tailed vs. Two sided/tailed Test
+
+One-sided (one-tailed) test
+A one-sided test is used when the researcher is interested in testing the effect in a specific
+direction (either greater than or less than the value specified in the null hypothesis). The
+alternative hypothesis in a one-sided test contains an inequality (either ">" or "<").
+
+Example: A researcher wants to test whether a new medication increases the average
+recovery rate compared to the existing medication.
+
+Advantages:
+1. More powerful: One-tailed tests are generally more powerful than two-tailed tests, as the
+entire significance level (α) is allocated to one tail of the distribution. This means that the
+test is more likely to detect an effect in the specified direction, assuming the effect exists.
+2. Directional hypothesis: One-tailed tests are appropriate when there is a strong
+theoretical or practical reason to test for an effect in a specific direction.
+
+Disadvantages:
+1. Missed effects: One-tailed tests can miss effects in the opposite direction of the specified
+alternative hypothesis. If an effect exists in the opposite direction, the test will not be able
+to detect it, which could lead to incorrect conclusions.
+2. Increased risk of Type I error: One-tailed tests can be more prone to Type I errors if the
+effect is actually in the opposite direction than the one specified in the alternative
+hypothesis.
+
+Two-sided (two-tailed) test
+A two-sided test is used when the researcher is interested in testing the effect in both
+directions (i.e., whether the value specified in the null hypothesis is different, either greater
+or lesser). The alternative hypothesis in a two-sided test contains a "not equal to" sign (≠).
+
+Example: A researcher wants to test whether a new medication has a different average
+recovery rate compared to the existing medication.
+The main difference between them lies in the directionality of the alternative hypothesis
+and how the significance level is distributed in the critical regions.
+
+Advantages:
+
+1. Detects effects in both directions: Two-tailed tests can detect effects in both directions,
+which makes them suitable for situations where the direction of the effect is uncertain or
+when researchers want to test for any difference between the groups or variables.
+2. More conservative: Two-tailed tests are more conservative because the significance level
+(α) is split between both tails of the distribution. This reduces the risk of Type I errors in
+cases where the direction of the effect is uncertain.
+
+Disadvantages:
+1. Less powerful: Two-tailed tests are generally less powerful than one-tailed tests because
+the significance level (α) is divided between both tails of the distribution. This means the
+test requires a larger effect size to reject the null hypothesis, which could lead to a higher
+risk of Type II errors (failing to reject the null hypothesis when it is false).
+2. Not appropriate for directional hypotheses: Two-tailed tests are not ideal for cases where
+the research question or hypothesis is directional, as they test for differences in both
+directions, which may not be of interest or relevance.
+
+Where can Hypothesis be applied ?
+1. Testing the effectiveness of interventions or treatments: Hypothesis testing can be used to
+determine whether a new drug, therapy, or educational intervention has a significant effect
+compared to a control group or an existing treatment.
+2. Comparing means or proportions: Hypothesis testing can be used to compare means or
+proportions between two or more groups to determine if there's a significant difference. This
+can be applied to compare average customer satisfaction scores, conversion rates, or employee
+performance across different groups.
+3. Analyzing relationships between variables: Hypothesis testing can be used to evaluate the
+association between variables, such as the correlation between age and income or the
+relationship between advertising spend and sales.
+4. Evaluating the goodness of fit: Hypothesis testing can help assess if a particular theoretical
+distribution (e.g., normal, binomial, or Poisson) is a good fit for the observed data.
+5. Testing the independence of categorical variables: Hypothesis testing can be used to
+determine if two categorical variables are independent or if there's a significant association
+between them. For example, it can be used to test if there's a relationship between the type of
+product and the likelihood of it being returned by a customer.
+
+5. A/B testing: In marketing, product development, and website design, hypothesis testing is
+often used to compare the performance of two different versions (A and B) to determine which
+one is more effective in terms of conversion rates, user engagement, or other metrics.
+
+Hypothesis Testing ML Applications
+1. Model comparison: Hypothesis testing can be used to compare the performance of different
+machine learning models or algorithms on a given dataset. For example, you can use a paired
+t-test to compare the accuracy or error rate of two models on multiple cross- validation folds
+to determine if one model performs significantly better than the other.
+2. Feature selection: Hypothesis testing can help identify which features are significantly related
+to the target variable or contribute meaningfully to the model's performance. For example, you
+can use a t-test, chi-square test, or ANOVA to test the relationship between individual features
+and the target variable. Features with significant relationships can be selected for building the
+model, while non-significant features may be excluded.
+3. Hyperparameter tuning: Hypothesis testing can be used to evaluate the performance of a
+model trained with different hyperparameter settings. By comparing the performance of
+models with different hyperparameters, you can determine if one set of hyperparameters leads
+to significantly better performance.
+4. Assessing model assumptions: In some cases, machine learning models rely on certain
+statistical assumptions, such as linearity or normality of residuals in linear regression.
+Hypothesis testing can help assess whether these assumptions are met, allowing you to
+determine if the model is appropriate for the data.
+
+p-value
+P-value is the probability of getting a sample as or more extreme(having more evidence against H0)
+than our own sample given the Null Hypothesis(H0) is true.
+In simple words p-value is a measure of the strength of the evidence against the Null Hypothesis
+that is provided by our sample data.
+
+Interpreting p-value
+
+With significance value
+When alpha is given, then you compare it with p-value to decide whether to reject the null
+hypothesis or not.
+If p-value < alpha, Reject the Null hypothesis.
+if p-value > alpha, Fail to Reject the Null Hypothesis
+
+Without significance value
+1. Very small p-values (e.g., p < 0.01) indicate strong evidence against the null hypothesis,
+suggesting that the observed effect or difference is unlikely to have occurred by chance
+alone.
+2. Small p-values (e.g., 0.01 ≤ p < 0.05) indicate moderate evidence against the null
+hypothesis, suggesting that the observed effect or difference is less likely to have occurred
+by chance alone.
+3. Large p-values (e.g., 0.05 ≤ p < 0.1) indicate weak evidence against the null hypothesis,
+suggesting that the observed effect or difference might have occurred by chance alone, but
+there is still some level of uncertainty.
+4. Very large p-values (e.g., p ≥ 0.1) indicate weak or no evidence against the null
+hypothesis, suggesting that the observed effect or difference is likely to have occurred by
+chance alone.
+
+p-value in context of z-test
+Example: Suppose a company is evaluating the impact of a new training program on the
+productivity of its employees. The company has data on the average productivity of its
+employees before implementing the training program. The average productivity was 50 units
+per day. After implementing the training program, the company measures the productivity of a
+random sample of 30 employees. The sample has an average productivity of 53 units per day
+and the pop std is 4. The company wants to know if the new training program has significantly
+increased productivity.
+
+Example: Suppose a snack food company claims that their Lays wafer packets contain an
+average weight of 50 grams per packet. To verify this claim, a consumer watchdog organization
+decides to test a random sample of Lays wafer packets. The organization wants to determine
+whether the actual average weight differs significantly from the claimed 50 grams. The
+organization collects a random sample of 40 Lays wafer packets and measures their weights.
+They find that the sample has an average weight of 49 grams, with a pop standard deviation of 5
+grams.
+
+t-test
+
+A t-test is a statistical test used in hypothesis testing to compare the means of two samples or to
+compare a sample mean to a known population mean. The t-test is based on the t- distribution,
+which is used when the population standard deviation is unknown and the sample size is small.
+There are three main types of t-tests:
+1.
+
+One-sample t-test: The one-sample t-test is used to compare the mean of a single sample to
+a known population mean. The null hypothesis states that there is no significant difference
+between the sample mean and the population mean, while the alternative hypothesis states
+that there is a significant difference.
+
+2. Independent two-sample t-test: The independent two-sample t-test is used to compare the
+means of two independent samples. The null hypothesis states that there is no significant
+difference between the means of the two samples, while the alternative hypothesis states
+that there is a significant difference.
+3. Paired t-test (dependent two-sample t-test): The paired t-test is used to compare the means
+of two samples that are dependent or paired, such as pre-test and post-test scores for the
+same group of subjects or measurements taken on the same subjects under two different
+conditions. The null hypothesis states that there is no significant difference between the
+means of the paired differences, while the alternative hypothesis states that there is a
+significant difference.
+
+Single Sample t-test
+A one-sample t-test checks whether a sample mean differs from the population mean.
+
+Assumptions for a single sample t-test
+1. Normality - Population from which the sample is drawn is normally distributed
+2. Independence - The observations in the sample must be independent, which means that
+the value of one observation should not influence the value of another observation.
+3. Random Sampling - The sample must be a random and representative subset of the
+population.
+4. Unknown population std - The population std is not known.
+Example: Suppose a manufacturer claims that the average weight of their new chocolate bars is
+50 grams, we highly doubt that and want to check this so we drew out a sample of 25 chocolate
+
+bars and measured their weight, the sample mean came out to be 49.7 grams and the sample
+std deviation was 1.2 grams. Consider the significance level to be 0.05
+
+Independent 2 Sample t-test
+An independent two-sample t-test, also known as an unpaired t-test, is a statistical method
+used to compare the means of two independent groups to determine if there is a significant
+difference between them.
+
+Assumptions for the test
+1. Independence of observations: The two samples must be independent, meaning there is
+no relationship between the observations in one group and the observations in the other
+group. The subjects in the two groups should be selected randomly and independently.
+2. Normality: The data in each of the two groups should be approximately normally
+distributed. The t-test is considered robust to mild violations of normality, especially when
+the sample sizes are large (typically n ≥ 30) and the sample sizes of the two groups are
+similar. If the data is highly skewed or has substantial outliers, consider using a nonparametric test, such as the Mann-Whitney U test.
+3. Equal variances (Homoscedasticity): The variances of the two populations should be
+approximately equal. This assumption can be checked using the F-test or Levene’s test for
+equality of variances. If this assumption is not met, you can use Welch's t-test, which does
+not require equal variances.
+4. Random sampling: The data should be collected using a random sampling method from
+the respective populations. This ensures that the sample is representative of the population
+and reduces the risk of selection bias.
+
+Example: Suppose a website owner claims that there is no difference in the average time spent
+on their website between desktop and mobile users. To test this claim, we collect data from 30
+desktop users and 30 mobile users regarding the time spent on the website in minutes. The
+sample statistics are as follows:
+desktop users = [12, 15, 18, 16, 20, 17, 14, 22, 19, 21, 23, 18, 25, 17, 16, 24, 20, 19, 22, 18, 15, 14, 23, 16,
+12, 21, 19, 17, 20, 14]
+mobile_users = [10, 12, 14, 13, 16, 15, 11, 17, 14, 16, 18, 14, 20, 15, 14, 19, 16, 15, 17, 14, 12, 11, 18, 15, 10, 16,
+15, 13, 16, 11]
+Desktop users:
+
+●
+●
+●
+
+Sample size (n1): 30
+Sample mean (mean1): 18.5 minutes
+Sample standard deviation (std_dev1): 3.5 minutes
+
+Mobile users:
+● Sample size (n2): 30
+● Sample mean (mean2): 14.3 minutes
+● Sample standard deviation (std_dev2): 2.7 minutes
+We will use a significance level (α) of 0.05 for the hypothesis test.
+
+Dependent(paired) 2 Sample t-test
+A paired two-sample t-test, also known as a dependent or paired-samples t-test, is a statistical
+test used to compare the means of two related or dependent groups.
+
+Common scenarios where a paired two-sample t-test is used
+include:
+1. Before-and-after studies: Comparing the performance of a group before and after an
+intervention or treatment.
+2. Matched or correlated groups: Comparing the performance of two groups that are
+matched or correlated in some way, such as siblings or pairs of individuals with similar
+characteristics.
+
+Assumptions
+1. Paired observations: The two sets of observations must be related or paired in some way,
+such as before-and-after measurements on the same subjects or observations from
+matched or correlated groups.
+2. Normality: The differences between the paired observations should be approximately
+normally distributed. This assumption can be checked using graphical methods (e.g.,
+histograms, Q-Q plots) or statistical tests for normality (e.g., Shapiro-Wilk test). Note that
+the t-test is generally robust to moderate violations of this assumption when the sample
+size is large.
+3. Independence of pairs: Each pair of observations should be independent of other pairs. In
+other words, the outcome of one pair should not affect the outcome of another pair. This
+assumption is generally satisfied by appropriate study design and random sampling.
+
+Note:- For this test, the degrees of freedom remain the same as n-1 (because it’s the same
+sample subjects, just the observations are taken in different conditions)
+Example: Let's assume that a fitness center is evaluating the effectiveness of a new 8-week
+weight loss program. They enroll 15 participants in the program and measure their weights
+before and after the program. The goal is to test whether the new weight loss program leads to
+a significant reduction in the participants' weight.
+Before the program:
+[80, 92, 75, 68, 85, 78, 73, 90, 70, 88, 76, 84, 82, 77, 91]
+After the program:
+[78, 93, 81, 67, 88, 76, 74, 91, 69, 88, 77, 81, 80, 79, 88]
+Significance level (α) = 0.05
+
+Chi-Square Distribution
+The Chi-Square distribution, also written as χ2 distribution, is a continuous probability distribution
+that is widely used in statistical hypothesis testing, particularly in the context of goodness-of-fit
+tests and tests for independence in contingency tables. It arises when the sum of the squares of
+independent standard normal random variables follows this distribution.
+
+The Chi-Square distribution has a single parameter, the degrees of freedom (df), which influences
+the shape and spread of the distribution. The degrees of freedom are typically associated with the
+number of independent variables or constraints in a statistical problem.
+
+Properties
+●
+
+It is a continuous distribution, defined for non-negative values.
+
+●
+
+It is positively skewed, with the degree of skewness decreasing as the degrees of freedom
+increase.
+
+●
+
+The mean of the Chi-Square distribution is equal to its degrees of freedom, and its variance
+is equal to twice the degrees of freedom.
+
+●
+
+As the degrees of freedom increase, the Chi-Square distribution approaches the normal
+distribution in shape.
+
+●
+
+mean = degrees of freedom
+
+●
+
+variance = 2*df = 2*mean
+
+The Chi-Square distribution is used in various statistical tests, such as the Chi- Square
+goodness-of-fit test, which evaluates whether an observed frequency distribution fits an expected
+theoretical distribution, and the Chi-Square test for independence, which checks the association
+between categorical variables in a contingency table.
+
+Chi-Square Test
+The Chi-Square test is a statistical hypothesis test used to determine if there is a significant
+association between categorical variables or if an observed distribution of categorical data differs
+from an expected theoretical distribution. It is based on the Chi-Square (χ2) distribution, and it is
+commonly applied in two main scenarios:
+1. Chi-Square Goodness-of-Fit Test: This test is used to determine if the observed distribution of a
+single categorical variable matches an expected theoretical distribution. It is often applied to check
+if the data follows a specific probability distribution, such as the uniform or binomial distribution.
+2. Chi-Square Test for Independence (Chi-Square Test for Association): This test is used to determine
+whether there is a significant association between two categorical variables in a sample.
+The Chi-Square test is a non-parametric test. Non- parametric tests do not assume that the data
+comes from a specific probability distribution or make any assumptions about population
+parameters like the mean or standard deviation.
+
+Why is Chi-square test non parametric?
+●
+
+Nature of Data: The Chi-square test is typically used for categorical data (nominal or
+ordinal), where the data represents frequencies or counts of occurrences within categories.
+
+This contrasts with parametric tests that deal with continuous data and often require
+assumptions about the data's distribution (e.g., normality).
+●
+
+Distribution Assumption: While the Chi-square test assumes that the test statistic follows a
+Chi-square distribution under the null hypothesis, this assumption is about the distribution
+of the test statistic itself, not the underlying data being analyzed. The distribution of the data
+in the sample does not need to follow a normal distribution, which is a common requirement
+for many parametric tests.
+
+●
+
+No Parameters of Underlying Population: The "non-parametric" label also reflects the fact
+that the Chi-square test does not assume anything about the parameters (mean, variance) of
+the underlying population distribution from which the sample is drawn. It's primarily
+concerned with the distribution of frequencies across different categories and tests
+hypotheses about proportions or the independence of categories, rather than about the
+parameters of a distribution.
+
+Summary:
+The Chi-square test is considered non-parametric because it does not require assumptions
+about the distribution of the data itself (e.g., that it is normally distributed) and because it deals
+with categorical rather than continuous data. The classification as "non-parametric" is more
+about the nature of the data and the absence of assumptions regarding the parameters of the
+underlying population's distribution, rather than the distribution of the test statistic under the
+null hypothesis. This makes the Chi-square test versatile for analyzing categorical data where
+parametric test assumptions cannot be met.
+
+Goodness of Fit Test
+The Chi-Square Goodness-of-Fit test is a statistical hypothesis test used to determine if the
+observed distribution of a single categorical variable matches an expected theoretical
+distribution. It helps to evaluate whether the data follows a specific probability distribution,
+such as uniform, binomial, or Poisson distribution, among others. This test is particularly useful
+when you want to assess if the sample data is consistent with an assumed distribution or if
+there are significant deviations from the expected pattern.
+
+Steps
+1.
+
+Define the null hypothesis (H0) and the alternative hypothesis (H1):
+a. H0: The observed data follows the expected theoretical distribution.
+b. H1: The observed data does not follow the expected theoretical distribution.
+
+2. Calculate the expected frequencies for each category based on the theoretical
+distribution and the sample size.
+3. Compute the Chi-Square test statistic (χ2) by comparing the observed and expected
+frequencies. The test statistic is calculated as:
+4. where Oi is the observed frequency in category i, Ei is the expected frequency in
+category i, and the summation is taken over all categories.
+5. Determine the degrees of freedom (df), which is typically the number of categories
+minus one (df = k - 1), where k is the number of categories.
+6. Calculate the p-value for the test statistic using the Chi-Square distribution with the
+calculated degrees of freedom.
+7. Compare the test statistic to the critical value or the p-value
+
+Assumptions
+1.
+
+Independence: The observations in the sample must be independent of each other.
+This means that the outcome of one observation should not influence the outcome of
+another observation.
+
+2. Categorical data: The variable being analysed must be categorical, not continuous or
+ordinal. The data should be divided into mutually exclusive and exhaustive categories.
+3. Expected frequency: Each category should have an expected frequency of at least 5.
+This guideline helps ensure that the Chi- Square distribution is a reasonable
+approximation for the distribution of the test statistic. Having small expected
+frequencies can lead to an inaccurate estimation of the Chi-Square distribution,
+potentially increasing the likelihood of a Type I error (incorrectly rejecting the null
+hypothesis) or a Type II error (incorrectly failing to reject the null hypothesis).
+4. Fixed distribution: The theoretical distribution being compared to the observed data
+should be specified before the test is conducted. It is essential to avoid choosing a
+distribution based on the observed data, as doing so can lead to biased results.
+In the Chi-Square Goodness-of-Fit test, we compare the observed frequencies of the
+categorical data to the expected frequencies based on a hypothesized distribution. The test
+doesn't rely on any assumptions about the underlying distribution's parameters. Instead, it
+focuses on comparing observed counts to expected counts, making it a non- parametric test.
+
+Example: Suppose we have a six-sided fair die, and we want to test if the die is indeed fair. We
+roll the die 60 times and record the number of times each side comes up. We'll use the
+Chi-Square Goodness-of-Fit test to determine if the observed frequencies are consistent with a
+fair die (i.e., a uniform distribution of the sides).
+Observed frequencies:
+Side 1: 12 times
+Side 2: 8 times
+Side 3: 11 times
+Side 4: 9 times
+Side 5: 10 times
+Side 6: 10 times
+
+Example: Suppose a marketing team at a retail company wants to understand the distribution of
+visits to their website by day of the week. They have a hypothesis that visits are uniformly
+distributed across all days of the week, meaning they expect an equal number of visits on each
+day. They collected data on website visits for four weeks and want to test if the observed
+distribution matches the expected uniform distribution.
+
+Observed frequencies (number of website visits per day of the week for four weeks):
+Monday: 420
+Tuesday: 380
+Wednesday: 410
+Thursday: 400
+Friday: 410
+Saturday: 430
+Sunday: 390
+
+Example: A survey of 800 families in a village with 4 children each revealed the following
+distribution:
+0 boys - 32 families
+1 boy - 178 families
+2 boys - 290 families
+3 boys - 236 families
+4 boys - 64 families
+Is this data consistent with the result that male and female births are equally probable?
+
+Test for Independence
+The Chi-Square test for independence, also known as the Chi-Square test for association, is a
+statistical test used to determine whether there is a significant association between two
+categorical variables in a sample. It helps to identify if the occurrence of one variable is
+dependent on the occurrence of the other variable, or if they are independent of each other.
+The test is based on comparing the observed frequencies in a contingency table (a table that
+displays the frequency distribution of the variables) with the frequencies that would be
+expected under the assumption of independence between the two variables.
+
+Steps
+1.
+
+State the null hypothesis (H0) and alternative hypothesis (H1): H0: There is no
+association between the two categorical variables (they are independent).H1: There is
+an association between the two categorical variables (they are dependent).
+
+2. Create a contingency table with the observed frequencies for each combination of
+the categories of the two variables.
+3. Calculate the expected frequencies for each cell in the contingency table assuming
+that the null hypothesis is true (i.e., the variables are independent).
+4. Compute the Chi-Square test statistic:
+χ2 = Σ [(O_ij - E_ij)2 / E_ij] where O_ij is the observed frequency in each cell and
+E_ij is the expected frequency.
+
+5. Determine the degrees of freedom: df = (number of rows - 1) * (number of columns 1)
+6. Obtain the critical value or p-value using the Chi-Square distribution table or a
+statistical software/calculator with the given degrees of freedom and significance
+level (commonly α = 0.05).
+7. Compare the test statistic to the critical value or the p-value to the significance level
+to decide whether to reject or fail to reject the null hypothesis. If the test statistic is
+greater than the critical value, or if the p-value is less than the significance level, we
+reject the null hypothesis and conclude that there is a significant association between
+the two variables.
+
+Assumptions
+1.
+
+Independence of observations: The observations in the sample should be independent
+of each other. This means that the occurrence of one observation should not affect
+the occurrence of another observation. In practice, this usually implies that the data
+should be collected using a simple random sampling method.
+
+2. Categorical variables: Both variables being tested must be categorical, either ordinal
+or nominal. The Chi-Square test for independence is not appropriate for continuous
+variables.
+3. Adequate sample size: The sample size should be large enough to ensure that the
+expected frequency for each cell in the contingency table is sufficient. A common
+rule of thumb is that the expected frequency for each cell should be at least 5. If some
+cells have expected frequencies less than 5, the test may not be valid, and other
+methods like Fisher's exact test may be more appropriate.
+4. Fixed marginal totals: The marginal totals (the row and column sums of the
+contingency table) should be fixed before the data is collected. This is because the
+Chi-Square test for independence assesses the association between the two variables
+under the assumption that the marginal totals are fixed and not influenced by the
+relationship between the variables.
+
+Example: A researcher wants to investigate if there is an association between the level of
+education (categorical variable) and the preference for a particular type of exercise (categorical
+variable) among a group of 150 individuals. The researcher collects data and creates the
+following contingency table
+
+Applications in Machine Learning
+1.
+
+Feature selection: Chi-Square test can be used as a filter-based feature selection method to
+rank and select the most relevant categorical features in a dataset. By measuring the
+association between each categorical feature and the target variable, you can eliminate
+irrelevant or redundant features, which can help improve the performance and efficiency of
+machine learning models.
+
+2. Evaluation of classification models: For multi-class classification problems, the Chi-Square
+test can be used to compare the observed and expected class frequencies in the confusion
+matrix. This can help assess the goodness of fit of the classification model, indicating how
+well the model's predictions align with the actual class distributions.
+3. Analysing relationships between categorical features: In exploratory data analysis, the ChiSquare test for independence can be applied to identify relationships between pairs of
+categorical features. Understanding these relationships can help inform feature engineering
+and provide insights into the underlying structure of the data.
+4. Discretization of continuous variables: When converting continuous variables into
+categorical variables (binning), the Chi-Square test can be used to determine the optimal
+number of bins or intervals that best represent the relationship between the continuous
+variable and the target variable.
+5. Variable selection in decision trees: Some decision tree algorithms, such as the CHAID (Chisquared Automatic Interaction Detection) algorithm, use the Chi-Square test to determine
+the most significant splitting variables at each node in the tree. This helps construct more
+effective and interpretable decision trees.
+
+F-Distribution
+●
+
+Continuous probability distribution: The F-distribution is a continuous probability
+distribution used in statistical hypothesis testing and analysis of variance (ANOVA).
+
+●
+
+Fisher-Snedecor distribution: It is also known as the Fisher-Snedecor distribution, named
+after Ronald Fisher and George Snedecor, two prominent statisticians.
+
+●
+
+Degrees of freedom: The F-distribution is defined by two parameters - the degrees of
+freedom for the numerator (df1) and the degrees of freedom for the denominator (df2).
+
+●
+
+Positively skewed and bounded: The shape of the F-distribution is positively skewed, with its
+left bound at zero. The distribution's shape depends on the values of the degrees of freedom.
+
+●
+
+Testing equality of variances: The F-distribution is commonly used to test hypotheses about
+the equality of two variances in different samples or populations.
+
+●
+
+Comparing statistical models: The F-distribution is also used to compare the fit of different
+statistical models, particularly in the context of ANOVA.
+
+●
+
+F-statistic: The F-statistic is calculated by dividing the ratio of two sample variances or
+mean squares from an ANOVA table. This value is then compared to critical values from the
+F-distribution to determine statistical significance.
+
+●
+
+Applications: The F-distribution is widely used in various fields of research, including
+psychology, education, economics, and the natural and social sciences, for hypothesis
+testing and model comparison.
+
+One way ANOVA test
+One-way ANOVA (Analysis of Variance) is a statistical method used to compare the means of three
+or more independent groups to determine if there are any significant differences between them. It
+is an extension of the t-test, which is used for comparing the means of two independent groups.
+The term "one-way" refers to the fact that there is only one independent variable (factor) with
+multiple levels (groups) in this analysis.
+The primary purpose of one-way ANOVA is to test the null hypothesis that all the group means are
+equal. The alternative hypothesis is that at least one group mean is significantly different from the
+others.
+
+Steps
+1.
+
+Define the null and alternative hypotheses.
+
+2. Calculate the overall mean (grand mean) of all the groups combined and mean of all the
+groups individually.
+3. Calculate the "between-group" and "within-group" sum of squares (SS).
+4. Find the between group and within group degree of freedoms
+
+5. Calculate the "between-group" and "within-group" mean squares (MS) by dividing their
+respective sum of squares by their degrees of freedom.
+
+6. Calculate the F-statistic by dividing the "between-group" mean square by the "withingroup" mean square.
+7. Calculate the p-value associated with the calculated F-statistic using the F-distribution and
+the appropriate degrees of freedom. The p-value represents the probability of obtaining an
+F-statistic as extreme or more extreme than the calculated value, assuming the null
+hypothesis is true.
+8. Choose a significance level (alpha), typically 0.05.
+9. Compare the calculated p-value with the chosen significance level (alpha).
+a. If the p-value is less than or equal to alpha, reject the null hypothesis in favor of the
+alternative hypothesis, concluding that there is a significant difference between at
+least one pair of group means.
+b. If the p-value is greater than alpha, fail to reject the null hypothesis, concluding that
+there is not enough evidence to suggest a significant difference between the group
+means.
+It's important to note that one-way ANOVA only determines if there is a significant difference
+between the group means; it does not identify which specific groups have significant differences.
+To determine which pairs of groups are significantly different, post-hoc tests, such as Tukey's HSD
+or Bonferroni, are conducted after a significant ANOVA result.
+
+Assumptions
+
+1.
+
+Independence: The observations within and between groups should be independent of each
+other. This means that the outcome of one observation should not influence the outcome of
+another. Independence is typically achieved through random sampling or random
+assignment of subjects to groups.
+
+2. Normality: The data within each group should be approximately normally distributed. While
+one-way ANOVA is considered to be robust to moderate violations of normality, severe
+deviations may affect the accuracy of the test results. If normality is in doubt, nonparametric alternatives like the Shapiro-Wilk test can be considered.
+3. Homogeneity of variances: The variances of the populations from which the samples are
+drawn should be equal, or at least approximately so. This assumption is known as
+homoscedasticity. If the variances are substantially different, the accuracy of the test results
+may be compromised. Levene's test or Bartlett's test can be used to assess the homogeneity
+of variances. If this assumption is violated, alternative tests such as Welch's ANOVA can be
+used.
+
+Post-hoc Test
+Post hoc tests, also known as post hoc pairwise comparisons or multiple comparison tests, are
+used in the context of ANOVA when the overall test indicates a significant difference among the
+group means. These tests are performed after the initial one-way ANOVA to determine which
+specific groups or pairs of groups have significantly different means.
+The main purpose of post hoc tests is to control the family-wise error rate (FWER) and adjust
+the significance level for multiple comparisons to avoid inflated Type I errors. There are several
+post hoc tests available, each with different characteristics and assumptions. Some common
+post hoc tests include:
+●
+
+Bonferroni correction: This method adjusts the significance level (α) by dividing it by
+the number of comparisons being made. It is a conservative method that can be
+applied when making multiple comparisons, but it may have lower statistical power
+when a large number of comparisons are involved.
+
+●
+
+Tukey's HSD (Honestly Significant Difference) test: This test controls the FWER and is
+used when the sample sizes are equal and the variances are assumed to be equal
+across the groups. It is one of the most commonly used post hoc tests.
+
+When performing post hoc tests, it is essential to choose a test that aligns with the
+assumptions of your data (e.g., equal variances, equal sample sizes) and provides an appropriate
+balance between controlling Type I errors and maintaining statistical power.
+
+Why is t-test not used for more than 3 categories?
+●
+
+Increased Type I error: When you perform multiple comparisons using individual t-tests, the
+probability of making a Type I error (false positive) increases. The more tests you perform,
+the higher the chance that you will incorrectly reject the null hypothesis in at least one of
+the tests, even if the null hypothesis is true for all groups.
+
+●
+
+Difficulty in interpreting results: When comparing multiple groups using multiple t-tests,
+the interpretation of the results can become complicated. For example, if you have 4 groups
+and you perform 6 pairwise t-tests, it can be challenging to interpret and summarize the
+overall pattern of differences among the groups.
+
+●
+
+Inefficiency: Using multiple t-tests is less efficient than using a single test that accounts for
+all groups, such as one-way ANOVA. One-way ANOVA uses the information from all the
+groups simultaneously to estimate the variability within and between the groups, which can
+lead to more accurate conclusions.
+
+Application in Machine Learning
+●
+
+Hyperparameter tuning: When selecting the best hyperparameters for a machine learning
+model, one-way ANOVA can be used to compare the performance of models with different
+hyperparameter settings. By treating each hyperparameter setting as a group, you can
+perform one-way ANOVA to determine if there are any significant differences in
+performance across the various settings.
+
+●
+
+Feature selection: One-way ANOVA can be used as a univariate feature selection method to
+identify features that are significantly associated with the target variable, especially when
+the target variable is categorical with more than two levels. In this context, the one-way
+ANOVA is performed for each feature, and features with low p-values are considered to be
+more relevant for prediction.
+
+●
+
+Algorithm comparison: When comparing the performance of different machine learning
+algorithms, one-way ANOVA can be used to determine if there are any significant
+differences in their performance metrics (e.g., accuracy, F1 score, etc.) across multiple runs
+or cross-validation folds. This can help you decide which algorithm is the most suitable for a
+specific problem.
+
+●
+
+Model stability assessment: One-way ANOVA can be used to assess the stability of a machine
+learning model by comparing its performance across different random seeds or
+initializations. If the model's performance varies significantly between different
+
+initializations, it may indicate that the model is unstable or highly sensitive to the choice of
+initial conditions.
+
+Regression Analysis
+Regression analysis is a statistical method used to examine the relationship between one dependent
+variable and one or more independent variables. The goal of regression analysis is to understand
+how the dependent variable changes when one or more independent variables are altered, and to
+create a model that can predict the value of the dependent variable based on the values of the
+independent variables.
+1.
+
+Define the research question: Identify the dependent variable (the variable you want to
+predict or explain) and the independent variable(s) (the variables that you think influence the
+dependent variable).
+
+2. Collect and prepare data: Gather data for the dependent and independent variables. The data
+should be organized in a tabular format, with each row representing an observation and
+each column representing a variable. It's essential to clean and pre-process the data to
+handle missing values, outliers, and other potential issues that may affect the analysis.
+3. Visualize the data: Before fitting a linear regression model, it's helpful to create scatter plots
+to visualize the relationship between the dependent variable and each independent variable.
+This can help you identify trends, outliers, and any potential issues with the data.
+4. Check assumptions: Linear regression has some underlying assumptions, including linearity,
+independence of errors, homoscedasticity (constant variance of errors), and normality of
+errors. You can use diagnostic plots and statistical tests to check whether these assumptions
+hold for your data.
+5. Fit the linear regression model: Use statistical software (e.g., R, Python, or Excel) to fit a
+linear regression model to your data. The model will estimate the regression coefficients
+(intercept and slope) that minimize the sum of squared residuals (i.e., the differences
+between the observed and predicted values of the dependent variable).
+6. Interpret the model: Analyze the estimated regression coefficients, their standard errors,
+t-values, and p-values to determine the statistical significance of the relationship between
+the dependent and independent variables. The R-squared value and adjusted R-squared
+value can provide insights into the goodness-of-fit of the model and the proportion of
+variation in the dependent variable explained by the independent variables.
+
+7. Validate the model: If you have a sufficiently large dataset, you can split it into a training and
+testing set. Fit the linear regression model to the training set, and then use the model to
+predict the dependent variable in the testing set. Calculate the mean squared error, root
+mean squared error, or another performance metric to assess the predictive accuracy of the
+model.
+8. Report results: Summarize the findings of the linear regression analysis in a clear and
+concise manner, including the estimated coefficients, their interpretation, and any
+limitations or assumptions that may impact the results.
+
+What's the statistics connection?
+Why is Regression Analysis required?
+
+

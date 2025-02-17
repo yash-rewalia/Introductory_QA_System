@@ -1,0 +1,13 @@
+[2025-02-17 11:35:57,455] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:35:57,776] {D:\work_yk\QA_system\scripts\data_ingestion.py:22} INFO - Data loaded successfully
+[2025-02-17 11:36:04,891] {D:\work_yk\QA_system\scripts\embedding.py:27} INFO - 
+[2025-02-17 11:36:05,027] {D:\work_yk\QA_system\scripts\embedding.py:34} INFO - 
+[2025-02-17 11:36:10,316] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:36:10,318] {D:\work_yk\QA_system\scripts\data_ingestion.py:22} INFO - Data loaded successfully
+[2025-02-17 11:36:11,260] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:36:11,262] {D:\work_yk\QA_system\scripts\data_ingestion.py:22} INFO - Data loaded successfully
+[2025-02-17 11:39:15,330] {D:\work_yk\QA_system\scripts\data_ingestion.py:19} INFO - Loading data from the given directory
+[2025-02-17 11:39:15,333] {D:\work_yk\QA_system\scripts\data_ingestion.py:22} INFO - Data loaded successfully
+[2025-02-17 11:39:15,958] {D:\work_yk\QA_system\scripts\embedding.py:27} INFO - 
+[2025-02-17 11:39:15,963] {D:\work_yk\QA_system\scripts\embedding.py:34} INFO - 
+[2025-02-17 11:39:50,189] {D:\work_yk\QA_system\scripts\embedding.py:37} INFO - 

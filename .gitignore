@@ -1,0 +1,7 @@
+.env
+env3.12
+__pycache__
+build
+dist
+QA_System.egg-info
+scripts/__pycache__
