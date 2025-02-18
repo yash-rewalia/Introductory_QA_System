@@ -1,0 +1,4 @@
+[2025-02-18 23:34:33,783] {D:\work_yk\QA_system\scripts\data_ingestion.py:54} INFO - Loading data from uploaded file: sample1.xml
+[2025-02-18 23:34:33,784] {D:\work_yk\QA_system\scripts\data_ingestion.py:75} INFO - Data loaded successfully
+[2025-02-18 23:34:36,136] {D:\work_yk\QA_system\scripts\embedding.py:27} INFO - 
+[2025-02-18 23:34:36,170] {D:\work_yk\QA_system\scripts\embedding.py:34} INFO - 

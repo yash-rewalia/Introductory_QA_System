@@ -7,4 +7,6 @@ IPython
 llama-index-embeddings-gemini
 streamlit
 setuptools
--e.
+python-docx
+PyPDF2
+lxml
